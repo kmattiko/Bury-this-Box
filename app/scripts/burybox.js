@@ -7,7 +7,7 @@ angular.module('burybox', ['ngRoute', 'restangular'])
     $routeProvider.when('/landing', {
       templateUrl: 'views/questions.html'
     });
-    $routeProvder.when('/makebox', {
+    $routeProvider.when('/makebox', {
       templateUrl: 'views/makebox.html'
     });
     $routeProvider.when('/viewbox', {
