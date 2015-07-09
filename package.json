@@ -36,5 +36,10 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "angular-router": "0.0.2",
+    "gulp-ng-annotate": "^1.0.0",
+    "ng-annotate": "^1.0.1"
   }
 }
