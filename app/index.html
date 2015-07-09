@@ -20,18 +20,16 @@
   </head>
 
   <header class="header_wrap" ng-controller="MainController as app">
-    <img class="logo" src="http://placekitten.com/50/50"
-      <nav class="btn-group">
-        <button type="button" class="btn btn-default" ng-click="#/landing">Landing Page</button>
-    <!--     <button class="btn btn-default" ng-click="app.page('views/landing')">Landing Page</button>
-      li><a href="#/landing" ng-click="app.login()">Landing Page</a></li>
+    <img src="http://placekitten.com/50/50"></img>
+    <ul class="nav nav-pills">
+      <li><a href="#/landing">Landing Page</a></li>
       <li><a href="#/makebox">Make a box</a></li>
       <li><a href="#/viewbox">View your box</a></li>
-      <ul> -->
-      </nav>
 
-  <main class="container-fluid" ng-include="app.view"></main>
+      </ul>
   </header>
+  <main class="container-fluid" ng-view></main>
+
 
 
     <!-- build:js scripts/vendor.js -->
