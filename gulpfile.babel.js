@@ -8,6 +8,14 @@ import {stream as wiredep} from 'wiredep';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+var ngAnnotate = require('gulp-ng-annotate');
+
+gulp.task('gulp-ng-annotate', function(){
+  return gulp.src('app/scripts/*.js')
+  .pipe(ngAnnotate())
+  .pipe(gulp.dest('dist'));
+});
+
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
@@ -49,8 +57,9 @@ gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 gulp.task('html', ['styles'], () => {
   const assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
-  return gulp.src('app/*.html')
+  return gulp.src('app/**/*.html')
     .pipe(assets)
+    .pipe($.if('*.js', $.ngAnnotate()))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
     .pipe(assets.restore())
@@ -103,7 +112,8 @@ gulp.task('serve', ['styles', 'fonts'], () => {
       routes: {
         '/bower_components': 'bower_components'
       }
-    }
+    },
+    directory: true
   });
 
   gulp.watch([
