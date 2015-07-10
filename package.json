@@ -41,5 +41,25 @@
     "angular-router": "0.0.2",
     "gulp-ng-annotate": "^1.0.0",
     "ng-annotate": "^1.0.1"
-  }
+  },
+  "name": "bury-this-box",
+  "description": "",
+  "version": "0.0.1",
+  "main": "gulpfile.babel.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmattiko/Bury-this-Box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmattiko/Bury-this-Box/issues"
+  },
+  "homepage": "https://github.com/kmattiko/Bury-this-Box#readme"
 }

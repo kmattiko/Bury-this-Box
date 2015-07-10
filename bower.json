@@ -1,6 +1,5 @@
 {
-  "name": "burry-this-box",
-  "private": true,
+  "name": "bury-this-box",
   "dependencies": {
     "bootstrap-sass": "3.3.4",
     "modernizr": "~2.8.1",
@@ -11,5 +10,18 @@
   "devDependencies": {
     "chai": "~3.0.0",
     "mocha": "~2.2.5"
-  }
+  },
+  "version": "0.0.1",
+  "homepage": "https://github.com/kmattiko/Bury-this-Box",
+  "authors": [
+    "Kim Mattiko <amberlie@rocketmail.com>"
+  ],
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
