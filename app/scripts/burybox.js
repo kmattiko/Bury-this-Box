@@ -5,14 +5,14 @@
 angular.module('burybox', ['ngRoute', 'restangular'])
   .config(function($routeProvider) {
     $routeProvider.when('/landing', {
-      templateUrl: '/views/landing.html'
+      templateUrl: 'app/views/landing.html'
     });
     $routeProvider.when('/makebox', {
-      templateUrl: '/views/makebox.html'
+      templateUrl: 'app/views/makebox.html'
     });
     $routeProvider.when('/viewbox', {
-      templateUrl: '/views/viewbox.html'
-    });
+      templateUrl: 'app/views/viewbox.html'
+    })
 
 //path eventually to go here with storage data
 //.config(function(RestangularProvider){
