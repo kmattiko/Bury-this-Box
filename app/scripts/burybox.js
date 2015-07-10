@@ -1,5 +1,5 @@
 /* global angular */
-(function(window) {
+(function() {
   'use strict';
 
 angular.module('burybox', ['ngRoute', 'restangular'])
@@ -24,4 +24,4 @@ angular.module('burybox', ['ngRoute', 'restangular'])
 //  RestangularProvider.setBaseUrl('https:')
 //})
 
-})(window);
+})();
