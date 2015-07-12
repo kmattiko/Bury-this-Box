@@ -44,7 +44,7 @@
   },
   "name": "bury-this-box",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "gulpfile.babel.js",
   "directories": {
     "test": "test"
