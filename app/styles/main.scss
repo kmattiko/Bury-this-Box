@@ -3,9 +3,10 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import "landing.scss";
-@import "makebox.scss";
-@import "viewbox.scss";
+
+@import "_landing.scss";
+@import "_makebox.scss";
+@import "_viewbox.scss";
 
 .browserupgrade {
   margin: 0.2em 0;
