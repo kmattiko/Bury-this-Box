@@ -1,5 +1,6 @@
-(function(window) {
-  'use strict';
+
+(function() {
+'use strict';
 
 
 
@@ -11,4 +12,4 @@
 
 
 
-})(window);
+})();
