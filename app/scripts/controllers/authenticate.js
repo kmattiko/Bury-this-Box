@@ -1,7 +1,7 @@
 (function(window) {
   'use strict';
 
-angular.module('bury-this-box')
+angular.module('burybox')
 
 .controller('MainController', function($scope){
   var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
@@ -20,4 +20,4 @@ angular.module('bury-this-box')
 
 });
 
-)}(window);
+})(window);
