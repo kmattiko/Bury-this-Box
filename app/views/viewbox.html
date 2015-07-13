@@ -1,9 +1,9 @@
 <div class="row photos" ng-controller="PhotoController as photo">
       <h2>Your Box Here!</h2><!--need to add title selcted from newbox page -->
 <div class="col-lg-12" ng-repeat="list in photo.lists">
-  <p id="seeit" class="col-lg-4 offset-2">{{list.img.url}}</p>
-  <p id="itstitle" class="col-lg-12">{{list.img.title}}</p>
-  <p id="itsdescription" class="col-lg-12">{{list.img.description}}</p>
-  <p id="itsdate" class="col-lg-12">{{list.img.date}}</p>
+  <p id="seeit" class="col-lg-4 offset-2">{{list.url}}</p>
+  <p id="itstitle" class="col-lg-12">{{list.title}}</p>
+  <p id="itsdescription" class="col-lg-12">{{list.description}}</p>
+  <p id="itsdate" class="col-lg-12">{{list.date}}</p>
 </div>
 </div>
