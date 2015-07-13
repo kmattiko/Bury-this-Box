@@ -18,9 +18,6 @@ angular.module('burybox', ['ngRoute', 'restangular'])
     })
   })
 
-  .controller('MainController', function(){
-    console.log('yo');
-  });
 
 //path eventually to go here with storage data
 //.config(function(RestangularProvider){
