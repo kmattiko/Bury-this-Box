@@ -6,13 +6,14 @@ angular.module('burybox')
 
 .controller('PhotoController', function($http) {
   var photo = this;
-  photo.list = [ ];
+  photo.lists = [{"url": "http://placekitten.com/g/200/300",
+"title":"Whatevah", "description":"not important", "date":"today"}];
 
-  $http.get('/api/image.json')
+/*  $http.get('/api/image.json')
   .then(function(respoonse) {
     console.log(response)
-    photo.list = response.data;
-  });
+    photo.lists = response.data;
+  });*/
 });
 
 
