@@ -4,7 +4,7 @@
 
 angular.module('burybox')
 
-.controller('MainController', function($scope){
+.controller('LoginController', function($scope){
   var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
 
   var self = this;
