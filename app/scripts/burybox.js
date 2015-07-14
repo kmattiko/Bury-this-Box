@@ -15,12 +15,9 @@ angular.module('burybox', ['ngRoute', 'restangular'])
     });
     $routeProvider.when('/404', {
       templateUrl: 'views/404.html'
-    })
-  })
-
-  .controller('MainController', function(){
-    console.log('yo');
+    });
   });
+
 
 //path eventually to go here with storage data
 //.config(function(RestangularProvider){

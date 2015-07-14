@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "angular-router": "0.0.2",
+    "firebase": "^2.2.7",
     "gulp-ng-annotate": "^1.0.0",
     "ng-annotate": "^1.0.1"
   },
