@@ -2,17 +2,24 @@
 (function() {
   'use strict';
 
-var openFile = function(event) {
-  var input = event.target;
-
-  var reader = new FileReader();
-  reader.onload = function () {
-    var dataURL = reader.result;
-    var output = document.getElementById('output');
-    output.src = dataURL;
-  };
-  reader.readAsDataURL(input.files[0]);
-};
+/*.directive('fileread', [function () {
+  return {
+    scope: {
+      fileread: "="
+    };
+    link: function (scope, element, attributes) {
+      element.bind("change", function (changeEvent) {
+        var reader = new FileReader();
+        reader.onload = function (loadEvent) {
+          scope.$apply(function () {
+            scope.fileread = loadEvent.target.result;
+          });
+        }
+        reader.readAsDataURL(changeEvent.target.files[0]);
+      });
+    }
+  }
+}]);*/
 
 
 /*  angular.module('burybox')
