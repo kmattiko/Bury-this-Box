@@ -1,20 +1,19 @@
-
+/* global angular */
 (function() {
-'use strict';
+  'use strict';
 
-angular.module('burybox')
+  angular.module('burybox')
 
-.controller('PhotoController', function($http) {
-  var photo = this;
-  photo.lists = [{"url": "http://placekitten.com/g/200/300",
-"title":"Whatevah", "description":"not important", "date":"today"}];
+  .controller('PhotoController', function($http) {
+    var photo = this;
+    photo.lists = [];
 
-/*  $http.get('/api/image.json')
-  .then(function(respoonse) {
-    console.log(response)
-    photo.lists = response.data;
-  });*/
-});
+    $http.get('/api/list/photo.json')
+      .then(function(response) {
+        console.log(response.data);
+        photo.lists = response.data;
+      });
+  });
 
 
 
