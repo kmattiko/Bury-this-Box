@@ -14,6 +14,7 @@ var openFile = function(event) {
   reader.readAsDataURL(input.files[0]);
 };
 
+
 /*  angular.module('burybox')
 
   .controller('PhotoController', function($http) {
