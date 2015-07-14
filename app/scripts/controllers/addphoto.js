@@ -2,7 +2,19 @@
 (function() {
   'use strict';
 
-  angular.module('burybox')
+var openFile = function(event) {
+  var input = event.target;
+
+  var reader = new FileReader();
+  reader.onload = function () {
+    var dataURL = reader.result;
+    var output = document.getElementById('output');
+    output.src = dataURL;
+  };
+  reader.readAsDataURL(input.files[0]);
+};
+
+/*  angular.module('burybox')
 
   .controller('PhotoController', function($http) {
     var photo = this;
@@ -13,7 +25,7 @@
         console.log(response.data);
         photo.lists = response.data;
       });
-  });
+  });*/
 
 
 

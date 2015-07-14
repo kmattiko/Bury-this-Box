@@ -1,9 +1,11 @@
-<div class="container photos" ng-controller="PhotoController as photo">
+<div class="container photos"> <!-- ng-controller="PhotoController as photo"> -->
       <h2>Your Box Here!</h2><!--need to add title selcted from newbox page -->
-<div class="col-lg-12" ng-repeat="list in photo.lists">
-  <p id="seeit">{{list.url}}</p>
+<!--<div class="col-lg-12" ng-repeat="list in photo.lists">
+<!--  <p id="seeit">{{list.url}}</p>
   <p id="itstitle">{{list.title}}</p>
   <p id="itsdescription">{{list.description}}</p>
-  <p id="itsdate">{{list.date}}</p>
-</div>
+  <p id="itsdate">{{list.date}}</p> 
+</div> -->
+<input type='file' accept='image/*' onchange='openFile(event)'>
+<img id='output'>
 </div>
