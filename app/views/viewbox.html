@@ -1,11 +1,11 @@
 <div class="container photos"> <!-- ng-controller="PhotoController as photo"> -->
-      <h2>Your Box Here!</h2><!--need to add title selcted from newbox page -->
+  <h2>Your Box Here!</h2>  <!--need to add title selcted from newbox page -->
+  <input type='file' ng-model="editItem._attachments_uri.image" accept="*.pdf,*.jpg,*.png,*.img" app-filereader/>
+  <img id='output'>
+</div>
+
 <!--<div class="col-lg-12" ng-repeat="list in photo.lists">
 <!--  <p id="seeit">{{list.url}}</p>
   <p id="itstitle">{{list.title}}</p>
   <p id="itsdescription">{{list.description}}</p>
-  <p id="itsdate">{{list.date}}</p>
-</div> -->
-<input type='file' fireread="vm.uploadme"></input> 
-<img id='output'>
-</div>
+  <p id="itsdate">{{list.date}}</p> -->
