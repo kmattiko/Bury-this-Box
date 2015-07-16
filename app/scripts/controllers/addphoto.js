@@ -2,14 +2,12 @@
 (function() {
   'use strict';
 
-  var app = angular.module('burybox' ['firebase']);
+  var app = angular.module('burybox');
 
-    app.controller('PhotoController', function ($firebaseArray, $firebase) {
+    app.controller('PhotoController', [$firebase, $firebaseArray (function (firebase) {
 
       var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
       var self = this;
-
-      self.data = $firebaseArray(firebase);
 
       self.submit = function() {
         self.data.$add({
@@ -19,7 +17,7 @@
       };
 
 
-    });
+    }]);
 
   /*function($scope) {
     $scope.list = [];
