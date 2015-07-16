@@ -2,8 +2,9 @@
 (function() {
   'use strict';
 
-  angular.module('burybox')
-    .controller('PhotoController', function($firebaseArray, $firebase, $stateParams) {
+  var app = angular.module('burybox' ['firebase']);
+
+    app.controller('PhotoController', function($firebaseArray, $firebase, $stateParams) {
 
       var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
       var self = this;
