@@ -17,6 +17,8 @@ angular.module('burybox', ['ngRoute', 'restangular'])
     });
     $routeProvider.when('/viewbox', {
       templateUrl: 'views/viewbox.html'
+    //  controller: 'AddToBoxController',
+    //  controllerAs: 'AddtoBox'
     });
     $routeProvider.when('/404', {
       templateUrl: 'views/404.html'

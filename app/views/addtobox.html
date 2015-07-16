@@ -1,12 +1,14 @@
-<div class="container photos">
+<div class="container-fluid photos">
   <!-- <h2>Your Box Here!</h2>  need to add title selcted from newbox page
   <input type='file' accept="*.pdf,*.jpg,*.png,*.img"/> -->
+  <h3>Your Box Title Here...</h3>
   <form ng-submit="submit()" ng-controller="PhotoController">
   Add the Picture's URL<br>
   <input type='text' ng-model="someText.testfield" name="text" placeholder="your pic here"/>
-  <button type="add" id="add" value="add">Add Photo</button>
+  <button type="add" id="add" value="Submit">Add Photo</button>
   <pre>list={{list}}</pre>
-  <button type="submit" id="submit" value="Sumbit">Add to Box</button>
+  <button type="submit" id="submit" value="Submit">Add to Box</button></br>
+  <button type="done" id="done" value="Submit">View My Box</button>
 </form>
 </div>
 <!--</div>
