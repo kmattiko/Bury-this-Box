@@ -1,10 +1,10 @@
-/* global angular Firebase */
+/* global angular Firebase*/
 (function() {
   'use strict';
 
-  var app = angular.module('burybox', ['firebase']);
+  var app = angular.module('burybox' ['firebase']);
 
-    app.controller('PhotoController', function ($firebaseArray, $firebase, $stateParams) {
+    app.controller('PhotoController', function ($firebaseArray, $firebase) {
 
       var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
       var self = this;
@@ -13,10 +13,11 @@
 
       self.submit = function() {
         self.data.$add({
-          photo: self.photoLoad,
+          photo: self.photoLoad
         });
         self.photoLoad = '';
       };
+
 
     });
 
