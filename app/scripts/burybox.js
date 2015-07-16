@@ -15,10 +15,11 @@ angular.module('burybox', ['ngRoute', 'restangular'])
     $routeProvider.when('/makebox', {
       templateUrl: 'views/makebox.html'
     });
-    $routeProvider.when('/viewbox', {
-      templateUrl: 'views/viewbox.html'
-    //  controller: 'AddToBoxController',
-    //  controllerAs: 'AddtoBox'
+    $routeProvider.when('/addtobox', {
+      templateUrl: 'views/addtobox.html'
+    });
+    $routeProvider.when('/savebox', {
+      templateUrl: 'views/savebox.html'
     });
     $routeProvider.when('/404', {
       templateUrl: 'views/404.html'
