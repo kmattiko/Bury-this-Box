@@ -14,6 +14,8 @@
           $scope.someText = { testField: ''};
         };
       });
+
+      
       //on NG-CLick of submit button img needs to convert to
     //  console.log("test")
     //  var selectedFile = $('#input').get(0).file[0];

@@ -4,8 +4,11 @@
   <form ng-submit="submit()" ng-controller="PhotoController">
   Add the Picture's URL<br>
   <input type='text' ng-model="someText.testfield" name="text" placeholder="your pic here"/>
-  <button type="submit" id="submit" value="Submit">Submit</button>
+  <button type="add" id="add" value="add">Add Photo</button>
   <pre>list={{list}}</pre>
+  <button type="submit" id="submit" value="Sumbit">Add to Box</button>
+</form>
+</div>
 <!--</div>
 </form>
 <div class="col-lg-12" ng-repeat="list in photo.lists">
