@@ -7,7 +7,7 @@ var app = angular.module('burybox');
 
   var self = this;
 
-  Auth.onAuth(function(user, authUser){
+  Auth.onAuth(function(user){
       self.user = user;
   });
 console.log(self.user);
