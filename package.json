@@ -18,10 +18,12 @@
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.0.0",
     "gulp-size": "^1.2.1",
+    "gulp-ng-annotate": "^1.0.0",
     "gulp-sourcemaps": "^1.5.0",
     "gulp-uglify": "^1.1.0",
     "gulp-useref": "^1.1.1",
     "main-bower-files": "^2.5.0",
+    "ng-annotate": "^1.0.1",
     "opn": "^1.0.1",
     "wiredep": "^2.2.2"
   },
@@ -37,9 +39,25 @@
       ]
     }
   },
-  "dependencies": {
-    "angular-router": "0.0.2",
-    "gulp-ng-annotate": "^1.0.0",
-    "ng-annotate": "^1.0.1"
-  }
+  "dependencies": {},
+  "name": "bury-this-box",
+  "description": "",
+  "version": "0.1.0",
+  "main": "gulpfile.babel.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmattiko/Bury-this-Box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmattiko/Bury-this-Box/issues"
+  },
+  "homepage": "https://github.com/kmattiko/Bury-this-Box#readme"
 }
