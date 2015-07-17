@@ -1,5 +1,5 @@
 (function(){
-'use strict' ;
+'use strict';
 
 //TODO
 // when 'Add to Box' is clicked it needs to check for photos to be added
