@@ -42,7 +42,7 @@
   "dependencies": {},
   "name": "bury-this-box",
   "description": "",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "gulpfile.babel.js",
   "directories": {
     "test": "test"
