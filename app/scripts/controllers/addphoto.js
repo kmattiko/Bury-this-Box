@@ -4,10 +4,14 @@
 
   var app = angular.module('burybox');
 
-    app.controller('PhotoController', [$firebase, $firebaseArray (function (firebase) {
+    app.controller('PhotoController', function ($firebaseArray) {
+
+      var self = this;
 
       var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
-      var self = this;
+
+      self.data = $firebaseArray(firebase);
+      console.log(self.data);
 
       self.submit = function() {
         self.data.$add({
@@ -17,8 +21,26 @@
       };
 
 
-    }]);
+    });
 
+//    var app = angular.module('burybox');
+
+//      app.controller('PhotoController', [$firebase, function ($firebase) {
+
+//        var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
+//        var self = this;
+
+//        self.data = $firebaseArray(firebase);
+
+//        self.submit = function() {
+//          self.data.$add({
+//            photo: self.photoLoad
+//          });
+//          self.photoLoad = '';
+//        };
+
+
+//      }]);
   /*function($scope) {
     $scope.list = [];
     $scope.theContent = {
