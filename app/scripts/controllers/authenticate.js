@@ -9,10 +9,9 @@
 
     var self = this;
 
-    this.login = function() {
-      firebase.authWithOAuthPopup('google', function(error, auth) {
+    self.login = function() {
+      firebase.authWithOAuthPopup('google', function(/*error, auth*/) {
         remember: "sessionOnly";
-
       });
 
     };
