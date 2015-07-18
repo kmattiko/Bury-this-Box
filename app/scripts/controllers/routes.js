@@ -15,25 +15,28 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
     $routeProvider.when('/makebox', {
       templateUrl: 'views/makebox.html'
     });
+
     $routeProvider.when('/addtobox', {
       url :'addtobox',
       templateUrl: 'views/addtobox.html',
       controller: 'PhotoController',
       controllerAs: 'photo'
     });
+
     $routeProvider.when('/savebox', {
       templateUrl: 'views/savebox.html'
     });
+
     $routeProvider.when('/404', {
       templateUrl: 'views/404.html'
     });
+
+    $routeProvider.when('/', {
+      redirectTo: '/landing'
+    });
+
     $routeProvider.otherwise('/landing')
   });
 
-
-//path eventually to go here with storage data
-//.config(function(RestangularProvider){
-//  RestangularProvider.setBaseUrl('https:')
-//})
 
 })();
