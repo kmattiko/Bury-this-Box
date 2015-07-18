@@ -7,7 +7,7 @@
 
     var list = this;
 
-    list.photos = [];
+    //list.photos = [];
 
     $http.get('https://sweltering-inferno-1762.firebaseio.com/')
       .then(function(response) {

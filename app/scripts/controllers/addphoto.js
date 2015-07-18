@@ -15,9 +15,9 @@
 
       self.submit = function() {
         self.data.$add({
-          photo: self.photoLoad,
-          title: self.photoTitle,
-          description: self.photoDescription
+          photo: self.photo,
+          title: self.title,
+          description: self.description
         });
         self.photoLoad = '';
         self.photoTitle = '';
