@@ -1,4 +1,16 @@
-<div id="landingpage">
+<div id="landingpage container-fluid">
+
+  <div class="tabs">
+    <ul class="nav nav-pills">
+      <li><a href="#/landing">Landing Page</a></li>
+      <li><a href="#/makebox">Start A Box</a></li>
+      <li><a href="#/addtobox">Add To Your Box</a></li>
+      <li><a href="#/savebox">Finish Your Box</a></li>
+    </ul>
+  </div>
+  <div ng-view></div>
+</div>
+
 <header class="jumbotron">
   <div class="col-lg-12">
     <img src="http://clarkstonareafarmersmarket.weebly.com/uploads/3/0/2/1/30214255/1919248.jpg">
@@ -24,17 +36,17 @@
 
 
 <!--end of signin -->
-<div id="signup" class="col-lg-6">
-  <h3>Don't have a Google account?
-    <br> Get started here here!</h3>
-  <span class="name">Your Name</span>
-  <input placeholder="Sam Johnson"></input>
-  <br>
-  <form class="name">Your Email</form>
-  <input placeholder="sample@email.com"></input>
-  <br>
+<div id="signup" class="col-lg-6" ng-controller="LoginController as login">
+  <h3>Don't have a Google account?</h3>
+  <h4>Email</h4>
+  <input type="email" name="email" ng-model="model.user"/>
+  <h4>Password</h4>
+  <input type="password" name="password" ng-model="model.password"/>
+  <a href="addtobox" ng-click="login($event)">Sign In</a>
 </div><!--end of signup -->
 </div>
+
+
 <footer id="atbottom" class="col-lg-12">
 <h3>Footer</h3>
 <p>Powered by <br>

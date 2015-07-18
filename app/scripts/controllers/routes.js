@@ -7,16 +7,16 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
     $routeProvider.when('/landing', {
       templateUrl: 'views/landing.html'
     });
-    $routeProvider.when('/googlelogin', {
+  /*  $routeProvider.when('/googlelogin', {
       templateUrl: 'views/viewbox.html',
       controller: 'LoginController',
       controllerAs: 'login'
-    });
+    }); */
     $routeProvider.when('/makebox', {
       templateUrl: 'views/makebox.html'
     });
     $routeProvider.when('/addtobox', {
-      url :'/addtobox',
+      url :'addtobox',
       templateUrl: 'views/addtobox.html',
       controller: 'PhotoController',
       controllerAs: 'photo'
@@ -27,6 +27,7 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
     $routeProvider.when('/404', {
       templateUrl: 'views/404.html'
     });
+    $routeProvider.otherwise('/landing')
   });
 
 
