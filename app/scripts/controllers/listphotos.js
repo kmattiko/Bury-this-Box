@@ -5,13 +5,13 @@
 
   app.controller('ListController', function($http) {
 
-    var photo = this;
+    var list = this;
 
     list.photos = [];
 
     $http.get('https://sweltering-inferno-1762.firebaseio.com/')
       .then(function(response) {
-        console.log(response.data);
+        console.log(response);
         list.photos = response.data;
       });
   });
