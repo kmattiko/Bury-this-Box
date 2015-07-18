@@ -27,18 +27,4 @@
 
     });
 
-  /*function($scope) {
-    $scope.list = [];
-    $scope.theContent = {
-      testField: ''
-    };
-    // $scope.text = 'howdy';
-    $scope.submit = function() {
-        $scope.list.push($scope.theContent);
-        $scope.theContent = { testField: ''};
-      };
-    });*/
-  //  var selectedFile = $('#input').get(0).file[0];
-
-
 })();
