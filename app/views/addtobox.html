@@ -5,11 +5,12 @@
 
 <form ng-submit="photo.submit()" ng-controller="PhotoController as photo">
   Add a Photo URL
-  <input type="text" ng-model="photo.photoLoad" name="text" placeholder="Your Pic Here"/>
+  <input type="text" ng-model="photo.photoLoad" name="text" placeholder="Your Pic Here"/><br>
   Add a Photo Title
-  <input type="text" ng-model=
-
-  <button type="sumbit" value="Submit">Add Photo</button>
+  <input type="text" ng-model="photo.photoTitle" name="text" placeholder="Flowery Title"/><br>
+  Add a little something about this photo
+  <input type="text" ng-model="photo.photoDescription" name="text" placeholder="Something to remember..."/><br>
+  <button type="sumbit" value="Submit">Sumbit Info</button>
   <!--<pre>list={{list}}</pre>
   <button type="submit" id="submit" value="Submit">Add to Box</button></br>
   <button type="done" id="done" value="Submit" ng-click="#/savebox">View My Box</button>-->
