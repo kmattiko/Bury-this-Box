@@ -3,7 +3,7 @@
 
  var app = angular.module('burybox')
 
-  app.controller('ListController', function($http) {
+  app.controller('ListController', function($http, $routeParams) {
 
     var list = this;
 
