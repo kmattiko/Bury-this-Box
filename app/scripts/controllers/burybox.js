@@ -1,16 +1,12 @@
 /* global angular */
-/*(function() {
+(function() {
   'use strict';
 
-angular.module('burybox', ['restangular', 'ngRoute', 'burybox.services', 'burybox.login'
-.controller('MainController', MainController)
+angular.module('burybox', []).controller('MainController', function(){
 
-function MainController() {
+  return('hello world');
 
-  console.log("hello world");
-}
+});
 
 
-])
-
-})();*/
+})();

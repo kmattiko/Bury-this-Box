@@ -1,5 +1,5 @@
-/* global angular Firebase */
-/*(function() {
+/* global  */
+(function() {
   'use strict';
 
   angular.module('burybox')
@@ -16,4 +16,4 @@
 
     };
   });
-})(); */
+})(); 

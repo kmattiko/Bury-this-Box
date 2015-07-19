@@ -3,15 +3,17 @@
   'use strict';
 
 angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
-  .config(function($routeProvider, $locationProvider) {
+  .config(function($routeProvider) {
 
     $routeProvider.when('/index', {
       templateUrl: 'views/landing.html'
     });
 
     $routeProvider.when('/landing', {
-      templateUrl: 'views/landing.html'
+      templateUrl: 'views/landing.html',
       //where login/authentication happens
+      controller: 'LoginController',
+      controllerAs: 'login'
     });
 
     $routeProvider.when('/makebox', {
@@ -20,8 +22,10 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
     });
 
     $routeProvider.when('/addtobox', {
-      url :'addtobox',
+      url: 'addtobox',
       templateUrl: 'views/addtobox.html',
+      controller: 'PhotoController',
+      controllerAs: 'photo'
       //where boxes are added to
     });
 
@@ -35,10 +39,10 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
     });
 
     $routeProvider.when('/', {
-      redirectTo: '/landing'
+      redirectTo: '/landing',
     });
 
-    $routeProvider.otherwise('/landing')
+    $routeProvider.otherwise('/landing');
   });
 
 

@@ -1,1 +1,29 @@
-<h2>It is alive!</h2>
+<div class="completebox col-lg-12" ng-controller="HideShowController as hideshow">
+<h2>Your Box's Title</h2>
+<ul class="photolist" ng-show>
+  <li>
+    <img src="https://placeimg.com/150/150/animals">
+    <h4>Our First Date</h4>
+    <p>This was blah, blah, blah, blah. I felt good because blah, blah, blah</p>
+  </li>
+  <li>
+    <img src="https://placeimg.com/150/150/animals">
+    <h4>Our First Date</h4>
+    <p>This was blah, blah, blah, blah. I felt good because blah, blah, blah</p>
+  </li>
+  <li>
+    <img src="https://placeimg.com/150/150/animals">
+    <h4>Our First Date</h4>
+    <p>This was blah, blah, blah, blah. I felt good because blah, blah, blah</p>
+  </li>
+</ul>
+<div class="banana" ng-hide="hideshow.submit">
+<h3>Your Items have been hidden, check back later</h3>
+</div>
+<select ng-click>
+  <option>30 seconds</option>
+  <option>30 days</option>
+  <option>6 months</option>
+</select>
+<button class="submit" type="submit" ng-click>submit</button>
+</div>

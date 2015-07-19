@@ -1,9 +1,10 @@
+/* global angular */
 (function(){
 'use strict';
 
- var app = angular.module('burybox')
+ var app = angular.module('burybox');
 
-  app.controller('ListController', function($http, $routeParams) {
+  app.controller('ListController', function($http) {
 
     var list = this;
 
