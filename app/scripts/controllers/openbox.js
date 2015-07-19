@@ -2,7 +2,7 @@
 (function(){
 'use strict';
 
-var app = angular.module('burybox');
+/*var app = angular.module('burybox');
   app.controller('NewBoxController', function(Auth){
 
   var self = this;
@@ -11,6 +11,6 @@ var app = angular.module('burybox');
       self.user = user;
   });
 console.log(self.user);
-});
+});*/
 
 })();

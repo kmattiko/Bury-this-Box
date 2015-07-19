@@ -1,5 +1,5 @@
 /* global angular Firebase */
-(function() {
+/*(function() {
   'use strict';
 
   angular.module('burybox')
@@ -10,10 +10,10 @@
     var self = this;
 
     self.login = function() {
-      firebase.authWithOAuthPopup('google', function(/*error, auth*/) {
+      firebase.authWithOAuthPopup('google', function(error, auth) {
         //remember: 'sessionOnly';
       });
 
     };
   });
-})();
+})(); */
