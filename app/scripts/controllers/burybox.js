@@ -1,8 +1,8 @@
 /* global angular */
-/*(function() {
+(function() {
   'use strict';
 
-angular.module('burybox', ['restangular', 'ngRoute', 'burybox.services', 'burybox.login'
+angular.module('burybox', ['restangular', 'ngRoute', 'burybox.services', 'burybox.login'])
 .controller('MainController', MainController)
 
 function MainController() {
@@ -11,6 +11,4 @@ function MainController() {
 }
 
 
-])
-
-})();*/
+})();
