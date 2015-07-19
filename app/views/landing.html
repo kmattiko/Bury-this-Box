@@ -9,7 +9,7 @@
 </header>
 <!--end of jumbotron-->
 <section id="about" class="col-lg-12">
-  <h2>A little bit about this service..</h2>
+  <h2>A little bit about this service...</h2>
   <p>We provide a place for you to store images that you may not want to look at right now. You might want to look at them later but not today. We are here to help. You can store those photos with us, even give yourself a set amount of time away, and come back to them when you are ready.
     Welcome to Bury this Box. </p>
 </section>
@@ -22,13 +22,13 @@
 
 
 <!--end of signin -->
-<div id="signup" class="col-lg-6 offset-3" ng-controller="LoginController as login">
+<div id="signup" class="col-lg-12" ng-controller="LoginController as login">
   <h3>Sign In Here</h3>
   <h4>Email</h4>
   <input type="email" name="email" ng-model="model.user"/>
   <h4>Password</h4>
-  <input type="password" name="password" ng-model="model.password"/>
-  <a href="addtobox" ng-click="login($event)">Go!</a>
+  <input type="password" name="password" ng-model="model.password"/><br>
+  <a href="addtobox" class="btn-default" ng-click="login($event)">Go!</a>
 </div><!--end of signup -->
 </div>
 

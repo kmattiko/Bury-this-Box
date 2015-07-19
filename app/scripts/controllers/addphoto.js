@@ -15,13 +15,13 @@
 
       self.submit = function() {
         self.data.$add({
-          photo: self.photo,
+          photo: self.url,
           title: self.title,
           description: self.description
         });
-        self.photoLoad = '';
-        self.photoTitle = '';
-        self.photoDescription = '';
+        self.url = '';
+        self.title = '';
+        self.description = '';
       };
 
 
