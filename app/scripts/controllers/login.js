@@ -1,5 +1,33 @@
+/* global Firebase angular */
 (function() {
   'use strict';
+
+  angular.module('burybox', ['firebase'])
+
+  .controller('LoginController', function($state, $timeout, $firebaseAuth) {
+
+    var self = this;
+
+    self = {};
+
+    var auth = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
+
+    self.authObj = $firebaseAuth(auth);
+    self.login = function(user, password) {
+      self.authObj.$authWithPassword ({
+        email : self.user,
+        password : self.password,
+      })
+      self.go = function(path) {
+        $location.path('views/addtobox.html');
+      };
+
+      }
+      return self;
+
+
+      });
+})();
 
 /*  var services = angular.module('burybox', ['firebase'])
 
@@ -25,31 +53,3 @@
   return authServices;
 }
   ]); */
-
-
-  angular.module('burybox', ['firebase'])
-
-  .controller('LoginController', function($state, $timeout, $firebaseAuth) {
-
-    var self = this;
-
-    self = {};
-    
-    var auth = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
-
-    self.authObj = $firebaseAuth(auth);
-    self.login = function(user, password) {
-      self.authObj.$authWithPassword ({
-        email : user,
-        password : password
-      })
-      self.go = function(path) {
-        $location.path('views/addtobox.html');
-      };
-
-      }
-      return self;
-
-
-      });
-})();
