@@ -17,9 +17,9 @@
       self.authObj.$authWithPassword ({
         email : self.user,
         password : self.password,
-      })
+      });
       self.go = function(path) {
-        $location.path('views/addtobox.html');
+        $location.path('/addtobox');
       };
 
       }
