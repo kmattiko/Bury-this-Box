@@ -2,8 +2,7 @@
 (function() {
   'use strict';
 
-  var app = angular.module('burybox')
-  app.controller('PhotoController', function(PhotoController, $firebaseArray) {
+  angular.module('burybox').controller('PhotoController', function($firebaseArray) {
 
       var photo = this;
 
