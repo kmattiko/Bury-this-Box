@@ -20,8 +20,10 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
     });
 
     $routeProvider.when('/addtobox', {
-      url :'addtobox',
+      url: 'addtobox',
       templateUrl: 'views/addtobox.html',
+      controller: 'PhotoController',
+      controllerAs: 'photo'
       //where boxes are added to
     });
 
@@ -35,10 +37,12 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
     });
 
     $routeProvider.when('/', {
-      redirectTo: '/landing'
+      redirectTo: '/landing',
+      controller: 'LoginController',
+      controllerAs: 'login'
     });
 
-    $routeProvider.otherwise('/landing')
+    $routeProvider.otherwise('/landing');
   });
 
 

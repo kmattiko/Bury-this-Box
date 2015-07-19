@@ -3,12 +3,11 @@
   'use strict';
 
 angular.module('burybox', ['restangular', 'ngRoute', 'burybox.services', 'burybox.login'])
-.controller('MainController', MainController)
+.controller('MainController', function(){
 
-function MainController() {
+  console.log('hello world');
 
-  console.log("hello world");
-}
+});
 
 
 })();

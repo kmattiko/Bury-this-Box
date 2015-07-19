@@ -4,7 +4,7 @@
 
   angular.module('burybox', ['firebase'])
 
-  .controller('LoginController', function($state, $timeout, $firebaseAuth) {
+  .controller('LoginController', function($state, $timeout, $firebaseAuth, $location) {
 
     var self = this;
 
@@ -14,15 +14,15 @@
 
     self.authObj = $firebaseAuth(auth);
     self.login = function(user, password) {
-      self.authObj.$authWithPassword ({
-        email : self.user,
-        password : self.password,
+      self.authObj.$authWithPassword({
+        email: self.user,
+        password: self.password
       });
-      self.go = function(path) {
+      self.go = function() {
         $location.path('/addtobox');
       };
 
-      }
+    };
       return self;
 
 
