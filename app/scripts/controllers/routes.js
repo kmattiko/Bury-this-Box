@@ -10,8 +10,10 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
     });
 
     $routeProvider.when('/landing', {
-      templateUrl: 'views/landing.html'
+      templateUrl: 'views/landing.html',
       //where login/authentication happens
+      controller: 'LoginController',
+      controllerAs: 'login'
     });
 
     $routeProvider.when('/makebox', {
@@ -38,8 +40,6 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
 
     $routeProvider.when('/', {
       redirectTo: '/landing',
-      controller: 'LoginController',
-      controllerAs: 'login'
     });
 
     $routeProvider.otherwise('/landing');

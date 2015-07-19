@@ -2,10 +2,9 @@
 (function() {
   'use strict';
 
-angular.module('burybox', ['restangular', 'ngRoute', 'burybox.services', 'burybox.login'])
-.controller('MainController', function(){
+angular.module('burybox', []).controller('MainController', function(){
 
-  console.log('hello world');
+  return('hello world');
 
 });
 
