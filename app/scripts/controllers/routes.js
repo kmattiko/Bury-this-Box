@@ -3,7 +3,7 @@
   'use strict';
 
 angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
-  .config(function($routeProvider, $locationProvider) {
+  .config(function($routeProvider) {
 
     $routeProvider.when('/index', {
       templateUrl: 'views/landing.html'

@@ -4,7 +4,7 @@
 
   var app = angular.module('burybox');
 
-    app.controller('PhotoController', function ($firebaseArray) {
+    app.controller('PhotoController', function($firebaseArray) {
 
       var self = this;
 
