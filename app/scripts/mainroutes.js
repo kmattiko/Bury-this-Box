@@ -2,7 +2,8 @@
 (function() {
   'use strict';
 
-angular.module('burybox')
+angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
+  
   .config(function($routeProvider) {
 
     $routeProvider.when('/index', {
