@@ -1,4 +1,4 @@
-/* global  */
+/* global Firebase angular */
 (function() {
   'use strict';
 
@@ -10,10 +10,10 @@
     var self = this;
 
     self.login = function() {
-      firebase.authWithOAuthPopup('google', function(error, auth) {
+      firebase.authWithOAuthPopup('google', function() {
         //remember: 'sessionOnly';
       });
 
     };
   });
-})(); 
+})();

@@ -13,7 +13,7 @@
     var auth = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
 
     self.authObj = $firebaseAuth(auth);
-    self.login = function(user, password) {
+    self.login = function() {
       self.authObj.$authWithPassword({
         email: self.user,
         password: self.password

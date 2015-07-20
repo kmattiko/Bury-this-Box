@@ -37,7 +37,7 @@ angular.module('burybox')
     });
 
     $routeProvider.when('/', {
-      redirectTo: '/landing',
+      redirectTo: '/landing'
     });
 
     $routeProvider.otherwise('/landing');
