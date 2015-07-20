@@ -53,7 +53,9 @@
 }
   ]); */
 
-  /*(function() {
+  /* This is the GOOGLE authentication that had once worked
+
+  (function() {
     'use strict';
 
     angular.module('burybox')
