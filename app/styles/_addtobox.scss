@@ -4,9 +4,12 @@
   background-color: teal;
   form {
     display: inline-block;
+    padding-bottom: 2em;
   }
   .display {
     display: inline-block;
+    background-color: lightyellow;
+    color: darkgrey;
     .photourl {
       float: left;
     }
