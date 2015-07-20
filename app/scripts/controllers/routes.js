@@ -2,36 +2,46 @@
 (function() {
   'use strict';
 
-angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
+angular.module('burybox')
   .config(function($routeProvider) {
-    $routeProvider.when('/landing', {
+
+    $routeProvider.when('/index', {
       templateUrl: 'views/landing.html'
     });
-    $routeProvider.when('/googlelogin', {
-      templateUrl: 'views/viewbox.html',
+
+    $routeProvider.when('/landing', {
+      templateUrl: 'views/landing.html',
+      //where login/authentication happens
       controller: 'LoginController',
       controllerAs: 'login'
     });
+
     $routeProvider.when('/makebox', {
       templateUrl: 'views/makebox.html'
+      //where user goes to start a box
     });
+
     $routeProvider.when('/addtobox', {
-      templateUrl: 'views/addtobox.html',
-      controller: 'PhotoController',
-      controllerAs: 'photo'
+      url: 'addtobox',
+      templateUrl: 'views/addtobox.html'
+      //where boxes are added to
     });
+
     $routeProvider.when('/savebox', {
       templateUrl: 'views/savebox.html'
+      //where completed boxes are viewed and saved
     });
+
     $routeProvider.when('/404', {
       templateUrl: 'views/404.html'
     });
+
+    $routeProvider.when('/', {
+      redirectTo: '/landing'
+    });
+
+    $routeProvider.otherwise('/landing');
   });
 
-
-//path eventually to go here with storage data
-//.config(function(RestangularProvider){
-//  RestangularProvider.setBaseUrl('https:')
-//})
 
 })();
