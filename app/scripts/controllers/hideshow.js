@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-/*var app = angular.module('burybox');
+var app = angular.module('burybox');
 
 app.controller('ShowHideController', function(){
 
