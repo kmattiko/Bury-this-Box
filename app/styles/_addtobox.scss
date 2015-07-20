@@ -2,4 +2,13 @@
   text-align: center;
   color:lightgrey;
   background-color: teal;
+  form {
+    display: inline-block;
+  }
+  .display {
+    display: inline-block;
+    .photourl {
+      float: left;
+    }
+  }
 }
