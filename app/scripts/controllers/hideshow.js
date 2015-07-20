@@ -1,6 +1,14 @@
 (function(){
 'use strict';
 
+var app = angular.module('burybox');
+
+app.controller('ShowHideController', function($scope){
+
+  $scope.image = true;
+
+});
+
 /* TODO
   When a timeframe is selected, enter button must be cliked
   If/Else statement and Alert (Are you sure you want to hide this?)
@@ -9,7 +17,7 @@
   Timeframe starts counting
   NG Hide/Show switches when timeframe ends
 */
-var app = angular.module('burybox');
+/*var app = angular.module('burybox');
 app.controller('HideShowController', function(){
   var hideshow = this;
 
@@ -24,6 +32,6 @@ app.controller('HideShowController', function(){
     else {
       return false;
     }
-  });
+  });*/
 
 })();
