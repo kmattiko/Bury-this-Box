@@ -13,6 +13,9 @@ var app = angular.module('burybox');
 app.controller('HideShowController', function(){
   var hideshow = this;
 
+//_forEach src add ng-src?
+
+
   hideshow.submit(function(){
     if( sumbit == true ) {
       ng-hide (something) for (timeframe) && ng-show (something) for (timeframe)
