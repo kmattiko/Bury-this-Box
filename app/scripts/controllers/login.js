@@ -2,7 +2,7 @@
 (function() {
   'use strict';
 
-  angular.module('burybox', ['firebase'])
+  angular.module('burybox')
 
   .controller('LoginController', function($state, $timeout, $firebaseAuth, $location) {
 
@@ -23,7 +23,6 @@
       };
 
     };
-      return self;
 
 
       });

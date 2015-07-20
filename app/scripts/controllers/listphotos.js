@@ -1,14 +1,13 @@
 /* global angular */
 (function(){
 'use strict';
+ angular.module('burybox')
 
- var app = angular.module('burybox');
-
-  app.controller('ListController', function($http) {
-
+  .controller('ListController', function($http) {
+    console.log('hello');
     var list = this;
 
-    //list.photos = [];
+    list.photos = [];
 
     $http.get('https://sweltering-inferno-1762.firebaseio.com/')
       .then(function(response) {
