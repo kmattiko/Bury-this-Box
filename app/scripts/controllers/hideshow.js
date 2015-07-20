@@ -3,9 +3,9 @@
 
 var app = angular.module('burybox');
 
-app.controller('ShowHideController', function($scope){
+app.controller('ShowHideController', function(){
 
-  $scope.image = true;
+  this.image = false;
 
 });
 
