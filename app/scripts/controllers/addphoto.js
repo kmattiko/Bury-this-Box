@@ -1,7 +1,7 @@
 /* global angular Firebase*/
 (function() {
   'use strict';
-
+alert("test");
   angular.module('burybox').controller('PhotoController', function($firebaseArray) {
 
       var photo = this;

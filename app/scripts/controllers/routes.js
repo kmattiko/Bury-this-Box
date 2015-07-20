@@ -2,7 +2,7 @@
 (function() {
   'use strict';
 
-angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
+angular.module('burybox')
   .config(function($routeProvider) {
 
     $routeProvider.when('/index', {
@@ -23,9 +23,7 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
 
     $routeProvider.when('/addtobox', {
       url: 'addtobox',
-      templateUrl: 'views/addtobox.html',
-      controller: 'PhotoController',
-      controllerAs: 'photo'
+      templateUrl: 'views/addtobox.html'
       //where boxes are added to
     });
 

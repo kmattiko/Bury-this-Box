@@ -2,7 +2,8 @@
 (function() {
   'use strict';
 
-angular.module('burybox', []).controller('MainController', function(){
+angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
+  .controller('MainController', function(){
 
   return('hello world');
 
