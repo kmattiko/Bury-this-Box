@@ -36,6 +36,10 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
       //page for completed box and closed boxes
     });
 
+    $routeProvider.when('/home', {
+      templateUrl: 'views/home.html'
+    });
+
     $routeProvider.when('/404', {
       templateUrl: 'views/404.html'
     });
