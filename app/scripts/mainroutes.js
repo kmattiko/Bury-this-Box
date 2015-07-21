@@ -33,7 +33,7 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
       //where completed boxes are viewed and saved
     });
 
-    $routeProvider.when('/completebox'{
+    $routeProvider.when('/completebox', {
       templateUrl: 'views/completebox.html'
       //page for completed box and closed boxes
     });
