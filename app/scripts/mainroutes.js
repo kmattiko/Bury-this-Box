@@ -3,7 +3,7 @@
   'use strict';
 
 angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
-  
+
   .config(function($routeProvider) {
 
     $routeProvider.when('/index', {
@@ -31,6 +31,11 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
     $routeProvider.when('/savebox', {
       templateUrl: 'views/savebox.html'
       //where completed boxes are viewed and saved
+    });
+
+    $routeProvider.when('/completebox'{
+      templateUrl: 'views/completebox.html'
+      //page for completed box and closed boxes
     });
 
     $routeProvider.when('/404', {
