@@ -6,8 +6,7 @@ var app = angular.module('burybox');
 
 app.controller('ShowHideController', function(){
 
-  //this.image = false;
-
+  this.click = false;
 });
 
 /* TODO

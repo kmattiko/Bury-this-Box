@@ -11,7 +11,7 @@
 
       self.login = function() {
         ref.authWithOAuthPopup('google', function() {
-          //remember: "sessionOnly";
+          remember: 'sessionOnly';
         });
       };
     });
