@@ -6,14 +6,18 @@
   </div>
 </header> <!--end of jumbotron-->
 
-<section id="existingbox" class="col-lg-6">
-  <h2>Your existing boxes</h2>
+<section id="existingbox" class="col-lg-4">
+  <h3>Your open boxes</h3>
   <a href="#/addtobox" class="btn btn-warning">Open Box</a>
+</section>
+
+<section class="col-lg-4" ng-controller="ShowHideController as showhide">
+    <h3>Your closed boxes</h3>
   <a href="#/completebox" class="btn btn-warning">Closed Box</a>
 </section> <!--end of existingbox -->
 
 
-<div id="makenewbox" class="col-lg-6">
+<div id="makenewbox" class="col-lg-4">
   <h3>Create a New Box</h3>
   <a href="#/makebox" class="btn btn-warning">Start Here</a>
 </div><!--end of signup -->
