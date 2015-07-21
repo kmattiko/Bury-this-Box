@@ -22,10 +22,10 @@
 
 
 <!--end of signin -->
-<div id="signin" class="col-lg-12">
+<div id="signin" class="col-lg-12" ng-controller="LoginController as login">
   <h3>Authenticte with Google to Sign-In</h3>
   <img src="http://icons.iconarchive.com/icons/position-relative/social-1/128/google-icon.png"><br>
-  <a ng-click="login.googlelogin()" class="btn btn-warning">Authenticate</a>
+  <a href="#/addtobox" ng-click="login.login()" class="btn btn-warning">Authenticate</a>
 </div><!--end of signup -->
 </div>
 

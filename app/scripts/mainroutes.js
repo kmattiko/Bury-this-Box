@@ -11,10 +11,8 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
     });
 
     $routeProvider.when('/landing', {
-      templateUrl: 'views/landing.html',
+      templateUrl: 'views/landing.html'
       //where login/authentication happens
-      controller: 'LoginController',
-      controllerAs: 'login'
     });
 
     $routeProvider.when('/makebox', {
@@ -28,8 +26,8 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
       //where boxes are added to
     });
 
-    $routeProvider.when('/savebox', {
-      templateUrl: 'views/savebox.html'
+    $routeProvider.when('/hideshow', {
+      templateUrl: 'views/hideshow.html'
       //where completed boxes are viewed and saved
     });
 
