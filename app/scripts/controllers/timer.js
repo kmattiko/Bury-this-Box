@@ -1,3 +1,4 @@
+/* global angular */
 (function(){
   'use strict';
 
@@ -22,13 +23,13 @@ $scope.goTo = function(route) {
 }*/
 
 $scope.$on('timer-stopped', function() {
-    if (timer.countdown == 0) {
+  /*  if (time.countdown === 0) {
     $scope.click = (dangerzone);
     }
     else {
       return !dangerzone;
     };
-//remember: session;
+//remember: session;*/
 });
 
 })

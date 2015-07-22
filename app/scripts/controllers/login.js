@@ -1,5 +1,5 @@
 /* global Firebase angular */
-  ;(function() {
+  (function() {
     'use strict';
 
     angular.module('burybox')
@@ -11,7 +11,7 @@
 
       self.login = function() {
         ref.authWithOAuthPopup('google', function() {
-          remember: 'sessionOnly';
+    //      remember: 'sessionOnly';
         });
       };
     });
