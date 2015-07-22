@@ -22,7 +22,7 @@ $scope.goTo = function(route) {
 }*/
 
 $scope.$on('timer-stopped', function() {
-    if (timer = 0) {
+    if (timer.countdown == 0) {
     $scope.click = (dangerzone);
     }
     else {
