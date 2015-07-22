@@ -8,18 +8,14 @@
 <!--end of jumbotron-->
 
 <div class="couting col-lg-12" ng-controller="TimeController as time">
-<timer interval="1000" countdown="8">{{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
-<button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button>
-<button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button>
-<div ng-show="!toggle">
-<img ng-hide="toggle" src="http://clarkstonareafarmersmarket.weebly.com/uploads/3/0/2/1/30214255/1919248.jpg">
-</div>
-</div>
-<!--end of signin -->
-<div class="signout col-lg-12">
-  <a href='#/landing'class="btn btn-warning">Sign Out</a>
-</div>
+<timer interval="1000" countdown="5" ng-click="time.dangerzone = !time.dangerzone">{{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
+<!--<button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button>
+<button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button>-->
 
+  <p ng-hide="time.dangerzone"></p>
+  <a href='#/home' class="btn btn-warning">Sign Out</a>
+  <a href='#/addtobox' ng-show="time.dangerzone"class="dangerzone">danger zone</a>
+</div>
 
 <footer class="atbottom" class="col-lg-12">
 <h3>Footer</h3>
