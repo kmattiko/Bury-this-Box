@@ -6,8 +6,8 @@
   </div>
 </header> <!--end of jumbotron-->
 
-<div>
-<timer interval="1000" countdown="90">{{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
+<div ng-controller="TimeController as time">
+<timer interval="1000" countdown="4">{{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
 <section id="existingbox" class="col-lg-4">
   <h3>Your open boxes</h3>
   <a href="#/addtobox" class="btn btn-warning">Open Box</a>
