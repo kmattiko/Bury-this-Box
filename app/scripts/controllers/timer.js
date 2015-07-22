@@ -4,13 +4,21 @@
 
   angular.module('burybox')
 
-.controller('TimeController', function(){
+.controller('TimeController', function($scope){
+
+  //var time = this;
+
+  $scope.$on('timer-stopped', function() {
+
+  $scope.data ({
+//      dangerzone: time.dangerzone,
+
+});
+});
 
 //if (this.timer-stopped === true) {
 //  ng-show = !time.dangerzone;
 //}
-
-
 
 /*$scope.startTimer = function() {
   $scope.$broadcast('timer-start');
