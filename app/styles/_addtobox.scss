@@ -3,10 +3,18 @@
   color:lightgrey;
   background-color: teal;
 }
-form {
+.submission {
     display: inline-block;
-    padding-bottom: 2em;
+    padding-bottom: 4%;
   }
+.submission input {
+        padding-bottom: 2%;
+  }
+#photodescription {
+  width: 20%;
+  height: 8%;
+}
+
 .display {
     display: inline-block;
     background-color: lightyellow;
@@ -26,4 +34,10 @@ form {
 .display h4 {
   float: right;
   padding-right: 8%;
+}
+.btn {
+  padding-bottom: 10%;
+}
+.atbottom {
+  margin-top: 5%;
 }
