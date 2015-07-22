@@ -1,5 +1,5 @@
 /* global angular */
-;(function() {
+(function() {
   'use strict';
 
 angular.module('burybox', ['ngRoute', 'restangular', 'firebase', 'timer'])

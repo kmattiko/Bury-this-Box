@@ -10,6 +10,10 @@
       photo.data = $firebaseArray(firebase);
       console.log(photo.data);
 
+    /*  self.submit = function() {
+        self.data.$add({
+        photo: self.photoLoad */
+
       photo.submit = function() {
         photo.data.$add({
           photo: photo.url,
