@@ -5,19 +5,22 @@
 
   <form ng-submit="photo.submit()">
     Add a Photo URL
-    <input type="text" ng-model="photo.url" name="text" placeholder="www.placeimg.com"/><br>
+    <input type="text" class="photourl" ng-model="photo.url" name="text" placeholder="www.placeimg.com"/><br>
     Add a Photo Title
-    <input type="text" ng-model="photo.title" name="text" placeholder="Our First..."/><br>
+    <input type="text" id="phototitle" ng-model="photo.title" name="text" placeholder="Our First..."/><br>
     Add a little something about this photo
-    <input type="text" ng-model="photo.description" name="text" placeholder="I Remember This..."/><br>
-    <button type="sumbit" value="Submit">Sumbit Info</button>
+    <input type="text" id="photodescription" ng-model="photo.description" name="text" placeholder="I Remember This..."/><br>
+    <button class="btn btn-warning" type="sumbit" value="Submit">Sumbit Info</button>
     <!--<button type="submit" id="submit" value="Submit">Add to Box</button></br>
     <button type="done" id="done" value="Submit" ng-click="#/savebox">View My Box</button>-->
   </form>
 
-  <div class="col-lg-12" ng-repeat="photo in photo.data">
-    <img>{{photo.photo}}</img>
+  <div class="col-lg-12 display" ng-repeat="photo in photo.data">
+    <img src={{photo.photo}}>
     <p>{{photo.title}}</p>
     <p>{{photo.description}}</p>
   </div>
+  <div class="complete col-lg-12">
+  <a href='#/hideshow'class="btn btn-warning">See Completed Box</a>
+</div>
 </div>
