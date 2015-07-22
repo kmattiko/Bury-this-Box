@@ -23,12 +23,12 @@ $scope.goTo = function(route) {
 
 $scope.$on('timer-stopped', function() {
     if (timer = 0) {
-    $scope.click = (dangerzone = true);
+    $scope.click = (dangerzone);
     }
     else {
-      return false;
+      return !dangerzone;
     };
-
+//remember: session;
 });
 
 })
