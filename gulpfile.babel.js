@@ -113,8 +113,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
         '/bower_components': 'bower_components',
         '/api': 'api'
       }
-    },
-    directory: true
+    }
   });
 
   gulp.watch([
