@@ -1,0 +1,36 @@
+<div class="completebox col-lg-12" ng-controller="ShowHideController as showhide">
+<h2>Your Box's Title</h2>
+
+<a class="btn btn-warning" ng-click="showhide.submit = !showhide.submit">Hide Photos</a>
+<div ng-show="showhide"></div>
+
+<ul class="photolist" ng-hide="showhide.submit">
+  <li>
+    <img ng-src="https://placeimg.com/150/150/animals">
+    <h4>Our First Date</h4>
+    <p>This was blah, blah, blah, blah. I felt good because blah, blah, blah</p>
+  </li>
+  <li>
+    <img ng-src="https://placeimg.com/150/150/animals">
+    <h4>Our First Date</h4>
+    <p>This was blah, blah, blah, blah. I felt good because blah, blah, blah</p>
+  </li>
+  <li>
+    <img ng-src="https://placeimg.com/150/150/animals">
+    <h4>Our First Date</h4>
+    <p>This was blah, blah, blah, blah. I felt good because blah, blah, blah</p>
+  </li>
+</ul>
+
+<div ng-show="showhide.submit">
+  <h3>For how long?</h3>
+<select>
+  <option>30 seconds</option>
+  <option>30 days</option>
+  <option>6 months</option>
+</select>
+
+<a href='#/completebox'class="btn btn-warning">Close My Box</a>
+</div>
+
+</div>

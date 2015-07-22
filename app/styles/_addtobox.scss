@@ -3,3 +3,41 @@
   color:lightgrey;
   background-color: teal;
 }
+.submission {
+    display: inline-block;
+    padding-bottom: 4%;
+  }
+.submission input {
+        padding-bottom: 2%;
+  }
+#photodescription {
+  width: 20%;
+  height: 8%;
+}
+.display {
+    display: inline-block;
+    background-color: lightyellow;
+    color: darkgrey;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: bottom: 2%;
+  }
+.display img {
+    float: left;
+    padding-left: 5%;
+  }
+.display p {
+  float: right;
+  padding-right: 8%;
+}
+.display h4 {
+  float: right;
+  padding-right: 8%;
+}
+.btn {
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+.atbottom {
+  margin-top: 5%;
+}

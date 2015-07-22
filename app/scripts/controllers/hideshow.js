@@ -6,8 +6,7 @@ var app = angular.module('burybox');
 
 app.controller('ShowHideController', function(){
 
-  this.image = false;
-
+  this.click = false;
 });
 
 /* TODO
@@ -22,7 +21,7 @@ app.controller('ShowHideController', function(){
 app.controller('HideShowController', function(){
   var hideshow = this;
 
-//_forEach src add ng-src?
+//_forEach src add ng-src? (how will img src have ng-src added to each?)
 
 
   hideshow.submit(function(){

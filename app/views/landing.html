@@ -22,19 +22,15 @@
 
 
 <!--end of signin -->
-<div id="signin" class="col-lg-12" ng-controller="LoginController as login" ng-submit="login.submit()">
-  <h3>Sign In Here</h3>
-  <h4>Email</h4>
-  <input type="email" name="email" ng-model="login.user"/>
-  <h4>Password</h4>
-  <input type="password" name="password" ng-model="login.password"/><br>
-  <a href='#/addtobox'class="btn btn-warning">Go!</a>
+<div id="signin" class="col-lg-12" ng-controller="LoginController as login">
+  <h3>Authenticte with Google to Sign-In</h3>
+  <img src="http://icons.iconarchive.com/icons/position-relative/social-1/128/google-icon.png"><br>
+  <a href="#/home" ng-click="login.login()" class="btn btn-warning">Authenticate</a>
 </div><!--end of signup -->
 </div>
+</div>
 
-
-<footer id="atbottom" class="col-lg-12">
+<footer class="atbottom" class="col-lg-12">
 <h3>Footer</h3>
 <p>A footer of some kind will live here one day</p>
 </footer>
-</div> <!--end of landingpage -->
