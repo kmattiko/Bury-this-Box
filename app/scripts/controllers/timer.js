@@ -19,7 +19,7 @@ $scope.stopTimer = function() {
 $scope.$on('timer-stopped', function() {
   var toggle = false;
   toggle = !toggle;
-  // alert("time's up!");
+   alert("time's up!");
 });
 })
 
