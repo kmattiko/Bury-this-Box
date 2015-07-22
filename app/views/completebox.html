@@ -8,7 +8,7 @@
 <!--end of jumbotron-->
 
 <div class="couting col-lg-12" ng-controller="TimeController as time">
-<timer interval="1000" countdown="10" ng-click="!time.dangerzone = time.dangerzone">{{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
+<timer interval="1000" countdown="10" ng-click="time.dangerzone = !time.dangerzone">{{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
 <!--<button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button>
 <button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button>-->
 

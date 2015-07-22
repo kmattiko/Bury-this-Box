@@ -4,8 +4,13 @@
 
   angular.module('burybox')
 
-.controller('TimeController', function($scope){
-$scope.timerRunning = true;
+.controller('TimeController', function(){
+
+//if (this.timer-stopped === true) {
+//  ng-show = !time.dangerzone;
+//}
+
+
 
 /*$scope.startTimer = function() {
   $scope.$broadcast('timer-start');
@@ -22,8 +27,8 @@ $scope.goTo = function(route) {
   }
 }*/
 
-$scope.$on('timer-stopped', function() {
-  /*  if (time.countdown === 0) {
+  /* $scope.$on('timer-stopped', function() {
+   if (time.countdown === 0) {
     $scope.click = (dangerzone);
     }
     else {
@@ -32,6 +37,5 @@ $scope.$on('timer-stopped', function() {
 //remember: session;*/
 });
 
-})
 
 })();
