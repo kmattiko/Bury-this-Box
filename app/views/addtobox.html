@@ -1,21 +1,23 @@
 <div class="container-fluid addto" ng-controller="PhotoController as photo">
   <!-- <h2>Your Box Here!</h2>  need to add title selcted from newbox page
   <input type='file' accept="*.pdf,*.jpg,*.png,*.img"/> -->
-  <h2>Bury this Box</h2>
+  <header class="jumbotron">
+      <h1>Bury this Box</h1>
+  </header> <!--end of jumbotron-->
 
   <form class="submission" class="form-control" ng-submit="photo.submit()">
-    Add a Photo URL
+    Photo URL
     <input type="text" class="form-control" ng-model="photo.url" name="text" placeholder="www.placeimg.com"/><br>
-    Add a Photo Title
+    Photo Title
     <input type="text" id="phototitle" class="form-control" ng-model="photo.title" name="text" placeholder="Our First..."/><br>
-    Add a little something about this photo
+    Photo Description
     <input type="text" id="photodescription" class="form-control" ng-model="photo.description" name="text" placeholder="I Remember This..."/><br>
     <button class="btn btn-warning" type="sumbit" value="Submit">Sumbit Info</button>
     <!--<button type="submit" id="submit" value="Submit">Add to Box</button></br>
     <button type="done" id="done" value="Submit" ng-click="#/savebox">View My Box</button>-->
   </form>
 
-  <div class="display" ng-repeat="photo in photo.data">
+  <div class="display" class="col-lg-12" ng-repeat="photo in photo.data">
     <img src={{photo.photo}}>
     <h4 class="col-lg-9">{{photo.title}}</h4>
     <p class="col-lg-9">{{photo.description}}</p>
