@@ -11,8 +11,7 @@
         padding-bottom: 2%;
   }
 #photodescription {
-  width: 20%;
-  height: 8%;
+  width: 100%;
 }
 .display {
     display: inline-block;
@@ -33,6 +32,10 @@
 .display h4 {
   float: right;
   padding-right: 8%;
+}
+
+.form {
+  padding-bottom: 20%;
 }
 
 .atbottom {
