@@ -1,11 +1,13 @@
 /* global angular Firebase*/
 (function() {
   'use strict';
-  angular.module('burybox').controller('PhotoController', function($firebaseArray) {
+  angular.module('burybox').controller('PhotoController', function($firebaseArray, $http) {
 
       var photo = this;
 
       document.getElementById("upload_widget_img").addEventListener("click", function() {
+
+        $http.post("https://api.cloudinary.com/c1_1/kmattiko/image/upload");
 
         cloudinary.openUploadWidget({
           cloud_name: 'kmattiko', upload_preset: 'ejxt3qdf'
