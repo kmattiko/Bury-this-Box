@@ -5,6 +5,18 @@
 
       var photo = this;
 
+      document.getElementById("upload_widget_img").addEventListener("click", function() {
+
+        cloudinary.openUploadWidget({
+          cloud_name: 'kmattiko', upload_preset: 'ejxt3qdf'
+        },
+
+        function(error, results) {
+          console.log(result[0].url)
+          return photo.url = result[0].url
+        });
+      }, false);
+
       var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
 
       photo.data = $firebaseArray(firebase);
