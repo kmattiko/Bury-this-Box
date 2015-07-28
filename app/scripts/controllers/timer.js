@@ -2,13 +2,24 @@
 (function(){
   'use strict';
 
-angular.module('burybox').controller('TimeController', function(){
+//angular.module('burybox').controller('TimeController', function(){
 
-var time = this;
-var today = Date.now();
-var opendate = Date.now(time.opendate);
+//var time = this;
+var today = new Date(2015, 28, 7);
+var tomorrow = new Date(2015, 29, 7);
 
-console.log(opendate);
+var x = today < tomorrow;
+console.log(x)
+//var today = Date.now();
+
+/*var opendate = new Date(time.submit)
+var dstring = opendate.toGMTString();
+console.log(dstring);
+
+
+
+
+
 
 if (time.opendate < today)
 {
@@ -17,7 +28,7 @@ if (time.opendate < today)
 else {
   return false;
 }
-});
+});*/
 
 //if (this.timer-stopped === true) {
 //  ng-show = !time.dangerzone;
