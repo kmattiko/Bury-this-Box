@@ -4,22 +4,24 @@
 
 angular.module('burybox').controller('TimeController', function(){
 
-var time = this;
+//var time = this;
 //conlsole.log(time.opendate)
-var today = new Date();
+//var today = new Date();
 
-var opendate = new Date(time.opendate);
+var opendate = new Date()
+
+
     // probably needs to be NG-Model to tie view to date shown here
 //var x = today <= opendate;
-//console.log(opendate)
+console.log(opendate)
 
-if (today >= opendate)
+/*if (today >= opendate)
 {
   ngRoute('/closedbox')
 }
 else {
   return;
-};
+};*/
 
 //if (this.timer-stopped === true) {
 //  ng-show = !time.dangerzone;
