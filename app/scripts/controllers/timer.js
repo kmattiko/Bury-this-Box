@@ -6,6 +6,9 @@ angular.module('burybox').controller('TimeController', function(){
 
 var time = this;
 var today = Date.now();
+var opendate = Date.now(time.opendate);
+
+console.log(opendate);
 
 if (time.opendate < today)
 {
