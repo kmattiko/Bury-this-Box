@@ -8,9 +8,10 @@
 
   <form class="form-control" class="submission" ng-submit="photo.sumbit()">
     <div class="form-group">
-      <a class="btn upload-btn" id="upload_widget_img">Upload Here</a>
-      <input ng-model="photo.url" value="{{photo.url}}" placeholder="Your Image Here">
-      <label class="upload-label" for="exampleInputFile">wait here a moment</label>
+      <input type="file">
+       <button class="btn upload-btn" id="upload_widget_img">Upload Here</button>
+      <!--<input ng-model="photo.url" value="{{photo.url}}" placeholder="Your Image Here">
+      <label class="upload-label" for="exampleInputFile">wait here a moment</label> -->
     </div>
     <!--<form class="submission" class="form-control" ng-submit="photo.submit()">
     Photo URL

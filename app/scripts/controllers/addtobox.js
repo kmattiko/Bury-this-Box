@@ -7,17 +7,17 @@
 
       document.getElementById("upload_widget_img").addEventListener("click", function() {
 
-        //$http.post("https://api.cloudinary.com/c1_1/kmattiko/image/upload");
+        $http.post("https://api.cloudinary.com/c1_1/kmattiko/image/upload");
 
-        cloudinary.openUploadWidget({
-          cloud_name: 'kmattiko', upload_preset: 'ejxt3qdf'
+      /*  cloudinary.openUploadWidget({
+          cloud_name: 'kmattiko'
         },
 
         function(error, results) {
           console.log(result[0].url)
-          return photo.url = result[0].url
+          return photo.url = result[0].url */
         });
-      }, false);
+    //  }, false);
 
       var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
 
