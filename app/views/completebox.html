@@ -10,7 +10,7 @@
 <form class="form-control" class="col-lg-12" ng-controller="TimeController as time">
   Close this box until...
   <input type="date" id="opendate" class="form-group" ng-module="time.opendate">
-  <a href="#/closedbox" class="btn btn-warning">Done</a>
+  <a href="#/closedbox" ng-click="time.validate" class="btn btn-warning">Done</a>
 <!--<timer interval="1000" countdown="10" ng-click="dangerzone = !dangerzone">{{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
 <button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button>
 <button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button>

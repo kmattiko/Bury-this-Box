@@ -5,8 +5,9 @@
 angular.module('burybox').controller('TimeController', function(){
 
 var time = this;
+var today = Date.now();
 
-if (time.opendate < CurrentDate)
+if (time.opendate < today)
 {
   ngRoute('#/closedbox')
 }
