@@ -2,18 +2,17 @@
 (function(){
   'use strict';
 
-  angular.module('burybox')
+angular.module('burybox').controller('TimeController', function(){
 
-.controller('TimeController', function($scope){
+var time = this;
 
-  //var time = this;
-
-  $scope.$on('timer-stopped', function() {
-
-  $scope.data ({
-//      dangerzone: time.dangerzone,
-
-});
+if (time.opendate < CurrentDate)
+{
+  ngRoute('#/closedbox')
+}
+else {
+  return false;
+}
 });
 
 //if (this.timer-stopped === true) {
@@ -33,9 +32,8 @@ $scope.goTo = function(route) {
   if (timer.countdown == 0) {
     ''
   }
-}*/
-
-  /* $scope.$on('timer-stopped', function() {
+}
+ $scope.$on('timer-stopped', function() {
    if (time.countdown === 0) {
     $scope.click = (dangerzone);
     }
@@ -43,7 +41,5 @@ $scope.goTo = function(route) {
       return !dangerzone;
     };
 //remember: session;*/
-});
-
 
 })();
