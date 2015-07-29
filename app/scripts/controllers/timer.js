@@ -16,10 +16,16 @@ time.toFirebase = {
 
 time.submit = function(){
   var timestamp = time.open.opendate.getTime();
-time.toFirebase.endDate = timestamp;
-
+  time.toFirebase.endDate = timestamp;
   console.log(timestamp);
+/*  var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
+  timestamp.data = firebaseObject(firebase);
 
+  timestamp.submit = function() {
+    timestamp.data.$add {(
+      timestamp: time.toFirebase.endDate = timestamp
+    )}*/
+  }
 }
 
 var today = new Date();

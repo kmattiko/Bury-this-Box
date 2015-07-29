@@ -1,7 +1,7 @@
 /* global angular Firebase*/
 (function() {
   'use strict';
-  angular.module('burybox').controller('PhotoController', function($firebaseArray, $http) {
+  angular.module('burybox').controller('PhotoController', function($firebaseArray) {
 
       var photo = this;
 
@@ -15,7 +15,10 @@
         return photo.url = result[0].url
       });
     }, false);
-  
+
+//  photo.url.$loaded().then(function(data, key){
+//    console.log(photo.url);
+//  });
 
       var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
 
