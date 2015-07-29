@@ -39,7 +39,9 @@
       ]
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "cloudinary": "^1.2.2"
+  },
   "name": "bury-this-box",
   "description": "",
   "version": "0.3.0",

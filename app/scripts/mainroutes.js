@@ -2,7 +2,7 @@
 (function() {
   'use strict';
 
-angular.module('burybox', ['ngRoute', 'restangular', 'firebase', 'timer'])
+angular.module('burybox', ['ngRoute', 'restangular', 'firebase', 'timer', 'angular-cloudinary'])
 
   .config(function($routeProvider) {
 

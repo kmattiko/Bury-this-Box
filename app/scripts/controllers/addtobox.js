@@ -10,13 +10,13 @@
       //  cloudinary.uploader.upload('upload_widget_img');
         $http.post("https://api.cloudinary.com/c1_1/kmattiko/image/upload");
 
-       /*cloudinary.uploader.upload('upload_widget_img')({
+       cloudinary.uploader.upload('upload_widget_img')({
           cloud_name: 'kmattiko'
         },
 
         function(error, results) {
           console.log(result[0].url)
-          return photo.url = result[0].url */
+          return photo.url = result[0].url 
         });
     //  }, false);
 
