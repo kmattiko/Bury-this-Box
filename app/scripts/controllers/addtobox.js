@@ -16,7 +16,7 @@
 
         function(error, results) {
           console.log(result[0].url)
-          return photo.url = result[0].url 
+          return photo.url = result[0].url
         });
     //  }, false);
 
@@ -42,5 +42,5 @@
 
 
     });
-
+});
 })();
