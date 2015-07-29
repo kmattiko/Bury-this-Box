@@ -1,18 +1,21 @@
 .addto {
   text-align: center;
-  color:lightgrey;
-  background-color: teal;
+  color: #515B57;
+  background-color: #6DC6B6;
+  font-weight: bold;
 }
-.submission {
+#submission {
+    height: 3em;
     display: inline-block;
-    padding-bottom: 4%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+    margin-bottom: 4%;
   }
 .submission input {
-        padding-bottom: 2%;
+    padding-bottom: 2%;
   }
 #photodescription {
-  width: 20%;
-  height: 8%;
+  width: 100%;
 }
 .display {
     display: inline-block;
@@ -20,7 +23,7 @@
     color: darkgrey;
     padding-top: 2%;
     padding-bottom: 2%;
-    margin: bottom: 2%;
+    margin-bottom: 2%;
   }
 .display img {
     float: left;
@@ -34,10 +37,12 @@
   float: right;
   padding-right: 8%;
 }
-.btn {
-  padding-bottom: 10%;
-  padding-top: 10%;
-}
+
 .atbottom {
-  margin-top: 5%;
+  text-align: center;
+  background-color: lightyellow;
+  height: 5em;
+  padding-bottom: 5em;
+  padding-left: 90em;
+  color: teal;
 }
