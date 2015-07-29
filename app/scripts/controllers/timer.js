@@ -4,16 +4,17 @@
 
 angular.module('burybox').controller('TimeController', function(){
 
-//var time = this;
+var time = this;
 //conlsole.log(time.opendate)
-//var today = new Date();
+var today = new Date();
 
-var opendate = new Date()
+console.log(today);
+var opendate = new Date(time.opendate);
 
-
+console.log(opendate);
     // probably needs to be NG-Model to tie view to date shown here
-//var x = today <= opendate;
-console.log(opendate)
+var x = today <= opendate;
+console.log(x)
 
 /*if (today >= opendate)
 {

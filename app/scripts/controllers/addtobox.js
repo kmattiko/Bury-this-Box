@@ -4,12 +4,13 @@
   angular.module('burybox').controller('PhotoController', function($firebaseArray, $http) {
 
       var photo = this;
+      //var cloudinary = new Cloudinary('https://api.cloudinary.com/c1_1/kmattiko/image/upload');
 
       document.getElementById("upload_widget_img").addEventListener("click", function() {
-
+      //  cloudinary.uploader.upload('upload_widget_img');
         $http.post("https://api.cloudinary.com/c1_1/kmattiko/image/upload");
 
-      /*  cloudinary.openUploadWidget({
+       /*cloudinary.uploader.upload('upload_widget_img')({
           cloud_name: 'kmattiko'
         },
 
