@@ -10,9 +10,16 @@ time.blah = {
   opendate: null
 }
 
-time.submit = function(){
+time.toFirebase = {
+  endDate: ' '
+}
 
-  console.log(time.blah.opendate);
+time.submit = function(){
+  var timestamp = time.blah.opendate.getTime();
+time.toFirebase.endDate = timestamp;
+
+  console.log(timestamp);
+
 }
 
 var today = new Date();
