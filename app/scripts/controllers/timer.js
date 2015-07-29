@@ -5,8 +5,8 @@
 angular.module('burybox').controller('TimeController', function(){
 
 var time = this;
-//conlsole.log(time.opendate)
-time.blah = {
+
+time.open = {
   opendate: null
 }
 
@@ -15,7 +15,7 @@ time.toFirebase = {
 }
 
 time.submit = function(){
-  var timestamp = time.blah.opendate.getTime();
+  var timestamp = time.open.opendate.getTime();
 time.toFirebase.endDate = timestamp;
 
   console.log(timestamp);
