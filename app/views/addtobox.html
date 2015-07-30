@@ -5,7 +5,7 @@
   </header><!--end of jumbotron-->
 
   <form class="form-group" id="submission" ng-submit="photo.sumbit()">
-    <a href="#/addtobox" class="btn btn-warning" ng-model="photo.photo" class="form-control" id="upload_widget_opener">Click Here to Upload</a>
+    <a href="#/addtobox" class="btn btn-warning" ng-model="photo.picture" class="form-control" id="upload_widget_opener">Click Here to Upload</a>
     <p>Add a Photo Title</p>
     <input type="text" id="phototitle" class="form-control" ng-model="photo.title" name="text" placeholder="Our First..."/><br>
     <p>Add a Photo Description</p>
@@ -16,7 +16,7 @@
   </form>
 
   <div class="display" class="col-lg-12" ng-repeat="photo in photo.data">
-    <img src="https://placeimg.com/150/150/any/grayscale" ng-src={{photo.photo}}>
+    <img src="https://placeimg.com/150/150/any/grayscale" ng-src={{photo.picture}}>
     <h4 class="col-lg-9">{{photo.title}}</h4>
     <p class="col-lg-9">{{photo.description}}</p>
   </div>

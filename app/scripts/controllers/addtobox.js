@@ -17,15 +17,12 @@
       });
     }, false);
 
-//  photo.url.$loaded().then(function(data, key){
-//    console.log(photo.url);
-//  });
 
       var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
       var authData = ref.getAuth();
       var photosRef = ref.child(authData.uid + '/photos')
       var photoFolder = {
-        photo.photo = '',
+        photo.picture = '',
         photo.title = '',
         photo.description = ''
       };
@@ -34,13 +31,13 @@
 
       photo.submit = function() {
         photo.data.$add({
-          photo: photo.photo,
+          photo: photo.picture,
           title: photo.title,
           description: photo.description
         }).then(funcion(){
           $location.path('/photos');
         });
-      };
+      }; 
 
 
     });
