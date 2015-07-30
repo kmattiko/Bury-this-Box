@@ -31,13 +31,13 @@
       }
     });
 
-    document.getElementById('loginrouting').addEventListener('click', function(){
+  /*  document.getElementById('loginrouting').addEventListener('click', function(){
       if (Date.now >= timestamp) {
       $location.path('/closedbox')
     } else {
       $location.path('/home')
     }
-    });
+  }); */
 
     });
 
