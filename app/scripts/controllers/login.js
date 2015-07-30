@@ -18,7 +18,6 @@
           console.log("authenticated successfully", authData);
         }
       }, {
-        remember: 'sessionOnly',
         scope: 'email'
       });
     };

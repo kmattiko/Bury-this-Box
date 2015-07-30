@@ -2,7 +2,7 @@
 (function(){
   'use strict';
 
-angular.module('burybox').controller('TimeController', function($firebaseArray, $route){
+angular.module('burybox').controller('TimeController', function($firebaseArray, $location){
 
 var time = this;
 var today = Date.now();
@@ -25,7 +25,7 @@ time.submit = function(){
 };
 
 document.getElementById('closebutton').addEventListener('click', function(){
-  $route('#/closedbox')
+  $location.path('/closedbox')
 });
 
 });
