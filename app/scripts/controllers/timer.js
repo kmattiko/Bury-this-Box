@@ -24,6 +24,10 @@ time.submit = function(){
   console.log(timestamp);
 };
 
+//time.open {
+//  opendate: timestamp
+//}
+
 document.getElementById('closebutton').addEventListener('click', function(){
   $location.path('/closedbox')
 });

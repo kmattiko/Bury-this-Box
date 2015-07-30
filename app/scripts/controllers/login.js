@@ -2,7 +2,7 @@
   (function() {
     'use strict';
 
-    angular.module('burybox').controller('LoginController', function() {
+    angular.module('burybox').controller('LoginController', function($location) {
 
     var newUser = true;
     var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
@@ -31,6 +31,13 @@
       }
     });
 
+    document.getElementById('loginrouting').addEventListener('click', function(){
+      if (Date.now >= timestamp) {
+      $location.path('/closedbox')
+    } else {
+      $location.path('/home')
+    }
+    });
 
     });
 
