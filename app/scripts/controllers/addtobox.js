@@ -1,7 +1,8 @@
 /* global angular Firebase*/
 (function() {
   'use strict';
-  angular.module('burybox').controller('PhotoController', function($firebaseArray) {
+
+  angular.module('burybox').controller('PhotoController', function($firebaseArray, $location) {
 
       var photo = this;
 
@@ -20,24 +21,25 @@
 //    console.log(photo.url);
 //  });
 
-      var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
+      var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
+      var authData = ref.getAuth();
+      var photosRef = ref.child(authData.uid + '/photos')
+      var photoFolder = {
+        photo.photo = '',
+        photo.title = '',
+        photo.description = ''
+      };
 
-      photo.data = $firebaseArray(firebase);
-      console.log(photo.data);
-
-    /*  self.submit = function() {
-        self.data.$add({
-        photo: self.photoLoad */
+      photo.photoFolder = $firebaseArray(photosRef);
 
       photo.submit = function() {
         photo.data.$add({
-          photo: photo.url,
+          photo: photo.photo,
           title: photo.title,
           description: photo.description
+        }).then(funcion(){
+          $location.path('/photos');
         });
-        photo.url = '';
-        photo.title = '';
-        photo.description = '';
       };
 
 
