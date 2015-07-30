@@ -25,7 +25,7 @@ time.submit = function(){
     timestamp.data.$add {(
       timestamp: time.toFirebase.endDate = timestamp
     )}*/
-  }
+  
 }
 
 var today = new Date();
