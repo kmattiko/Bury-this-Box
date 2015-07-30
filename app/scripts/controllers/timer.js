@@ -2,15 +2,19 @@
 (function(){
   'use strict';
 
-angular.module('burybox').controller('TimeController', function($firebaseArray){
+angular.module('burybox').controller('TimeController', function($firebaseArray, $route){
 
 var time = this;
 var today = Date.now();
+var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/user');
+var authData = ref.getAuth();
+var timestampRef = ref.child(authData.uid + '/opendate');
+
 console.log(today);
 
 time.open = {opendate: null}
 
-time.toFirebase = {endDate: ' '}
+time.data = $firebaseArray(timestampRef);
 
 time.submit = function(){
   var timestamp = time.open.opendate.getTime();
@@ -20,15 +24,9 @@ time.submit = function(){
   console.log(timestamp);
 };
 
-var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/user');
-var authData = ref.getAuth();
-var timestampRef = ref.child(authData.uid + '/opendate');
-
-time.data = $firebaseArray(timestampRef);
-
-
-//ng-model="time.open.opendate"
-//ng-submit="time.submit()"
+document.getElementById('closebutton').addEventListener('click', function(){
+  $route('#/closedbox')
+});
 
 });
 })();
