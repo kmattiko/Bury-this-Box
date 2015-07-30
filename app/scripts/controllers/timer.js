@@ -1,49 +1,34 @@
-/* global angular */
+/* global angular Firebase*/
 (function(){
   'use strict';
 
-angular.module('burybox').controller('TimeController', function(){
+angular.module('burybox').controller('TimeController', function($firebaseArray){
 
 var time = this;
+var today = Date.now();
+console.log(today);
 
-time.open = {
-  opendate: null
-}
+time.open = {opendate: null}
 
-time.toFirebase = {
-  endDate: ' '
-}
+time.toFirebase = {endDate: ' '}
 
 time.submit = function(){
   var timestamp = time.open.opendate.getTime();
-  time.toFirebase.endDate = timestamp;
+  time.data.$add(timestamp).then(function(response){
+    console.log(response);
+  })
   console.log(timestamp);
-/*  var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
-  timestamp.data = firebaseObject(firebase);
+};
 
-  timestamp.submit = function() {
-    timestamp.data.$add {(
-      timestamp: time.toFirebase.endDate = timestamp
-    )}*/
+var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/user');
+var authData = ref.getAuth();
+var timestampRef = ref.child(authData.uid + '/opendate');
 
-}
+time.data = $firebaseArray(timestampRef);
 
-var today = Date.now();
 
-console.log(today);
-/* var opendate = new Date(time.opendate);
+//ng-model="time.open.opendate"
+//ng-submit="time.submit()"
 
-//console.log(opendate);
-    // probably needs to be NG-Model to tie view to date shown here
-//var x = today <= opendate;
-//console.log(x)
-});
-if (today >= opendate)
-{
-  ngRoute('/closedbox')
-}
-else {
-  return;
-};*/
 });
 })();
