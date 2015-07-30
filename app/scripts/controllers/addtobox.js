@@ -18,26 +18,22 @@
     }, false);
 
 
-      var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
+      var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
       var authData = ref.getAuth();
-      var photosRef = ref.child(authData.uid + '/photos')
-      var photoFolder = {
-        photo.picture = '',
-        photo.title = '',
-        photo.description = ''
+      var photosRef = ref.child(authData.uid + '/photos');
+      photo.folder = {
+        picture: '',
+        title: '',
+        description: ''
       };
 
-      photo.photoFolder = $firebaseArray(photosRef);
+      photo.data = $firebaseArray(photosRef);
 
       photo.submit = function() {
-        photo.data.$add({
-          photo: photo.picture,
-          title: photo.title,
-          description: photo.description
-        }).then(funcion(){
+        photo.data.$add(photo.folder).then(function(){
           $location.path('/photos');
         });
-      }; 
+      };
 
 
     });
