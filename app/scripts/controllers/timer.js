@@ -28,7 +28,7 @@ time.submit = function(){
 
 }
 
-var today = new Date();
+var today = Date.now();
 
 console.log(today);
 /* var opendate = new Date(time.opendate);
