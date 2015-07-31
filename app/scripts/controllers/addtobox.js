@@ -11,6 +11,7 @@
         cloudinary.openUploadWidget({
           cloud_name: 'kmattiko', upload_preset: 'q5mpk6sc'
         },
+
       function(error, result) {
         console.log(result[0].url);
         photo.folder.picture = result[0].url

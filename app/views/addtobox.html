@@ -16,7 +16,7 @@
   </form>
 
   <div class="display" class="col-lg-12" ng-repeat="photo in photo.data">
-    <img src="https://placeimg.com/150/150/any/grayscale" ng-src={{photo.picture}}>
+    <img src="https://placeimg.com/150/150/any/grayscale" id="showtheimage" ng-src={{photo.picture}}>
     <h4 class="col-lg-9">{{photo.title}}</h4>
     <p class="col-lg-9">{{photo.description}}</p>
   </div>

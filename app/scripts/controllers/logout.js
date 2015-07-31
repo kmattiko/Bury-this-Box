@@ -6,6 +6,6 @@
    this.logout = function() {
      ref.unauth();
    };
-
+});
 
 })();
