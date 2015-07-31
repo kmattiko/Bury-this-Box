@@ -1,29 +1,24 @@
 <div id="closedbox" class="container-fluid" class="col-lg-12">
 
-
-  <header class="jumbotron" id="myspecialheader">
+<header class="jumbotron" id="myspecialheader">
     <h1>Bury this Box</h1>
-  </header><!--end of jumbotron-->
+</header><!--end of jumbotron-->
 
 
-<div class="col-lg-12">
+<div id="timeform" class="col-lg-12">
   <h3> Close Your Box </h3>
   <p>Your box can be closed on a timer, select the amount of time</p>
-  <img src="http://st.houzz.com/simgs/2261063904b93e2e_4-9745/asian-jewelry-boxes-and-organizers.jpg">
-</div>
 
-
-<form class="form-control" class="col-lg-12" ng-controller="TimeController as time" ng-submit="time.submit()">
+<form class="form-control" ng-controller="TimeController as time" ng-submit="time.submit()">
   Close this box until...
   <input type="date" id="opendate" class="form-group" ng-model="time.open.opendate">
   <p>Please Note- By clicking submit you agree to your photos and photo data to be inaccessable until the date chosen. Once a selection is made and submitted it cannot be changed.</p>
   <button value="Submit" id="closebutton" class="btn btn-warning">Submit</button>
 </form>
-
+</div>
 
 <footer id="atbottom" class="col-lg-12">
 <h3>SkimMatt 2015</h3>
 </footer>
-
 
 </div>
