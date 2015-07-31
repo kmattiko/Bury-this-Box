@@ -1,5 +1,6 @@
 #landingpage {
   background-color: lightgray;
+  text-align: center;
 }
 #myspecialheader {
   background-image: url("http://res.cloudinary.com/kmattiko/image/upload/c_scale,h_400,w_1900/v1438218281/reusage-blog-fabulous-burnt-burned-wood-close-up_bubcl0.png");
@@ -8,12 +9,19 @@
   font-size: 25ex;
   height: 2em;
 }
-.content {
+#about {
+  background-color: #6DC6B6;
+  margin-top: 1em;
+  width: 70%;
+  margin-left: 15%;
+  padding: 1em 1em 1em 1em;
+}
+#signin {
   text-align: center;
   padding-bottom: 1em;
 }
 
-.atbottom {
+#atbottom {
   text-align: center;
   background-color: lightyellow;
   height: 5em;
