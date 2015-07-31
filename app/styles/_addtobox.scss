@@ -1,7 +1,7 @@
 .addto {
   text-align: center;
   color: #515B57;
-  background-color: #6DC6B6;
+  background-color: pink;
   font-weight: bold;
 }
 #myspecialheader {
@@ -20,9 +20,6 @@
 .submission input {
     padding-bottom: 2%;
   }
-#photodescription {
-  width: 100%;
-}
 .display {
     display: inline-block;
     background-color: lightyellow;
@@ -31,10 +28,16 @@
     padding-bottom: 2%;
     margin-bottom: 2%;
   }
-.display #showtheimage {
+  .display img {
     float: left;
-    height: 15em;
-    width: 15em;
+    padding-left: 5%;
+    width: 540px;
+    height: auto;
+}
+#showtheimage {
+    float: left;
+    height: 15px;
+    width: 15px;
     padding-left: 5%;
   }
 .display p {
