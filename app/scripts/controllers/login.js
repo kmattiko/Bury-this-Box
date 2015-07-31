@@ -7,40 +7,29 @@
     var login = self
     //var newUser = true;
     var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
-    var authData = ref.getAuth();
-    if (authData) {
-      console.log("you did it!", authData.uid);
-    }
-    this.login = function() {
-      ref.authWithOAuthPopup('google', function(error) {
-        if (error) {
-          console.log("failed", error);
-        } else {
-          console.log("authenticated successfully", authData);
+    login.auth = Auth.magicAuth;
+    login.authData = null;
+    login.addUser = function(){
+      login.auth.$onAuth(function(authData) {
+        loin.authData = authData;
+        if (authData) {
+          ref.child('users').child(authData.uid).update({
+            provider: authData.provider,
+            name: authData.google.displayName,
+            image: authData.google.profileImageURL
+          });
         }
-      }, {
-        scope: 'email'
       });
     };
-
-    ref.onAuth(function() {
-      if (authData) {
-        ref.child('user').child(authData.uid).set({
-          provider: authData.provider,
-          name: authData.google.displayName,
-          image: authData.google.profileImageURL
-        });
-      }
-    });
-
-  /*  document.getElementById('loginrouting').addEventListener('click', function(){
-      if (Date.now >= timestamp) {
-      $location.path('/closedbox')
-    } else {
-      $location.path('/home')
-    }
-  }); */
-
-    });
+    login.login = function() {
+      Auth.googleLogin();
+    };
+    login.checkAuth = function() {
+      console.log(Auth.authStatus());
+    };
+    login.logout = function() {
+      Auth.googleLogout();
+    };
+  });
 
   })();
