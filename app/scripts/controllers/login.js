@@ -4,7 +4,8 @@
 
     angular.module('burybox').controller('LoginController', function($location) {
 
-    var newUser = true;
+    var login = self
+    //var newUser = true;
     var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
     var authData = ref.getAuth();
     if (authData) {
@@ -23,10 +24,11 @@
     };
 
     ref.onAuth(function() {
-      if (authData && newUser) {
+      if (authData) {
         ref.child('user').child(authData.uid).set({
           provider: authData.provider,
-          name: authData.google.displayName
+          name: authData.google.displayName,
+          image: authData.google.profileImageURL
         });
       }
     });
