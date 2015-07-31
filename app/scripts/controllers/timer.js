@@ -19,11 +19,10 @@ time.data = $firebaseArray(timestampRef);
 time.submit = function(){
   var timestamp = time.open.opendate.getTime();
   time.data.$add(timestamp).then(function(response){
-    console.log(response);
+//    console.log(response);
   })
-  console.log(timestamp);
+    console.log(timestamp);
 };
-
 //time.open {
 //  opendate: timestamp
 //}
