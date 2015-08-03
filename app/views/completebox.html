@@ -9,7 +9,7 @@
   <h3> Close Your Box </h3>
   <p>Your box can be closed on a timer, select the amount of time</p>
 
-<form class="form-control" ng-controller="TimeController as time" ng-submit="time.submit()">
+<form class="form-control" id="calendarform" ng-controller="TimeController as time" ng-submit="time.submit()">
   Close this box until...
   <input type="date" id="opendate" class="form-group" ng-model="time.open.opendate">
   <p>Please Note- By clicking submit you agree to your photos and photo data to be inaccessable until the date chosen. Once a selection is made and submitted it cannot be changed.</p>
