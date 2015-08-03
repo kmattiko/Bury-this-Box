@@ -4,6 +4,8 @@
 
 angular.module('burybox').controller('TimeController', function($firebaseArray, $location){
 
+console.log('test');
+
 var time = this;
 var today = Date.now();
 var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/user');
