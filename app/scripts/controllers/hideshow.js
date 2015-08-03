@@ -9,18 +9,11 @@ angular.module('burybox').controller('HideShowController', function($firebase, $
 
 //  var today = Date.now()
 
- $http.get('https://sweltering-inferno-1762.firebaseio.com/user/google:112632700758187071933/opendate').then(function(response){
-   return response;
- });
+ //$http.get('https://sweltering-inferno-1762.firebaseio.com/user/google:112632700758187071933/opendate').then(function(response){
+   //return response;
+ //});
  //hideshow.opendate = $firebaseArray(ref);
  console.log('hello');
-//  console.log(ref);
-
-  //var authData = ref.getAuth();
-  //var timestamp = ref.data;
-
-  //console.log(timestamp);
-//  console.log(today);
 
 
 });
