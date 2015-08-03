@@ -28,7 +28,7 @@ time.submit = function(){
 //}
 
 document.getElementById('closebutton').addEventListener('click', function(){
-  $location.path('/closedbox')
+  $location.path('/home')
 });
 
 });
