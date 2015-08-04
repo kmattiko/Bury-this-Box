@@ -4,7 +4,7 @@
 
   angular.module('burybox').controller('LoginController', function($location, $firebase) {
 
-  var login = self;
+  var login = this;
 
   var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
   ref.authWithOAuthPopup('google', function(error, authData){
