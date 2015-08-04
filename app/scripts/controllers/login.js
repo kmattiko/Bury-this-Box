@@ -11,7 +11,7 @@
     if (error) {
       console.log('error');
     } else {
-      console.log('authenticated', authData);
+      console.log('authenticated', authData.uid);
     }
   });
     ref.onAuth(function(authData) {
