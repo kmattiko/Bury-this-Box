@@ -4,6 +4,7 @@
   angular.module('burybox').controller('HideShowController', function($firebase, $firebaseArray, $firebaseObject, $http) {
 
     var hideshow = this;
+    hideshow.timer = { };
     var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
 
     ref.authWithOAuthPopup('google', function(error, authData) {
@@ -12,6 +13,7 @@
 
     $http.get('https://sweltering-inferno-1762.firebaseio.com/user/' + authData.uid + '/timer' + '.json')
       //$http.get('https://sweltering-inferno-1762.firebaseio.com/user/google%3A112632700758187071933/opendate' + '.json');
+
       .then(function(response) {
         hideshow.timer = response.data;
         var timeToOpen = response.data.opendate;

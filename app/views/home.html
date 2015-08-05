@@ -4,15 +4,15 @@
     <h1>Bury this Box</h1>
   </header><!--end of jumbotron-->
 
-<section class="maincontent" id="existingbox" ng-if="'timeToOpen' < 'today'">
-  <h4>Signed In As:{{authData.google.displayName}}</h4>
+<section class="maincontent" id="existingbox" ng-module="hideshow" ng-if="'timeToOpen' > 'today'">
+<!--  <h4>Signed In As:{{authData.google.displayName}}</h4> -->
   <h2>View Your Open Box</h2>
   <a href="#/addtobox" class="btn btn-warning">Open Box</a>
 </section>
 
-<section class="maincontent" id="existingbox" ng-if="'timeToOpen' > 'today'">
+<section class="maincontent" id="existingbox" g-module="hideshow" ng-if="'timeToOpen' < 'today'">
   <h2>Your Box is Closed</h2>
-  <h4>Please return on {{hideshow.timeToOpen}}</h4>
+  <h4>Please return on {{timeToOpen}}</h4>
   <a href="#/landing" id="logoutbtn" ng-click="logout.logout()">Sign Out</a>
 </section>
 
