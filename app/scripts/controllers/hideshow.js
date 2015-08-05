@@ -16,6 +16,8 @@
         hideshow.timer = response.data;
         var timeToOpen = response.data.opendate;
         console.log(timeToOpen);
+        var today = Date.now();
+        console.log(today);
       });
 
     });
