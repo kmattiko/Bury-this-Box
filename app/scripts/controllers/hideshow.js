@@ -3,9 +3,8 @@
 
   angular.module('burybox').controller('HideShowController', function($firebase, $http) {
 
-    var self = this;
-
-    var endTime;
+    var hideshow = this;
+    hideshow.endTime = {};
 
     var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
     ref.authWithOAuthPopup('google', function (error, authData) {
@@ -14,11 +13,11 @@
 
       $http.get('https://sweltering-inferno-1762.firebaseio.com/user/' + authData.uid + '/timer' + '.json')
        .then(function(response) {
-        endTime = response.data.opendate;
-      //  console.log(endTime);
+        hideshow.endTime = response.data.opendate;
+        console.log(hideshow.endTime);
       });
     });
-    console.log(endTime);
+//    console.log(hideshow.endTime);
     var today = Date.now();
     console.log(today);
   });
