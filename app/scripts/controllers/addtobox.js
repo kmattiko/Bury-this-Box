@@ -18,7 +18,7 @@
       });
     }, false);
 
-      var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
+      var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/user');
       var authData = ref.getAuth();
       var photosRef = ref.child(authData.uid + '/photos');
       photo.folder = {
