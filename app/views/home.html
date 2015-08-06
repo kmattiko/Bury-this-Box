@@ -4,7 +4,7 @@
     <h1>Bury this Box</h1>
   </header><!--end of jumbotron-->
 
-<section class="maincontent" id="existingbox" ng-if="hideshow.endTime < hideshow.today || hideshow.endtime == null">
+<section class="maincontent" id="existingbox" ng-if="hideshow.endTime < hideshow.today || null">
 <!--  <h4>Signed In As:{{authData.google.displayName}}</h4> -->
   <h2>View Your Open Box</h2>
   <a href="#/addtobox" class="btn btn-warning">Open Box</a>
@@ -15,9 +15,9 @@
   <h4>Please return on {{hideshow.endTime}}</h4>
 </section>
 
-<div>
-    <a href="#/landing" id="logoutbtn" ng-click="logout.logout()">Sign Out</a>
-  </div>
+<div class ="col-lg-2 offset-lg-5">
+    <a href="#/landing" id="logoutbtn" class="btn btn-warning" ng-click="logout.logout()">Sign Out</a>
+</div>
 
 <footer id="atbottom" class="col-lg-12">
 <h3>SkimMatt 2015</h3>

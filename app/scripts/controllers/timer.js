@@ -4,14 +4,14 @@
 
 angular.module('burybox').controller('TimeController', function($firebaseArray, $location){
 
-
 var time = this;
-var today = Date.now();
 var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/user');
 var authData = ref.getAuth();
 var timestampRef = ref.child(authData.uid + '/timer');
 
 time.open = {opendate: null}
+
+//time.toFirebase = {endDate: ' '}
 
 time.data = $firebaseArray(timestampRef);
 
@@ -20,8 +20,8 @@ time.submit = function(){
   ref.child(authData.uid).child('timer').update({
     opendate: timestamp
   })
-//   .then(function(response){
-// //    console.log(response);
+//  .then(function(response){
+//    console.log(response);
 //   })
   console.log(timestamp);
 };
