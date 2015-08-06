@@ -6,6 +6,7 @@
     var hideshow = this;
     hideshow.today = {};
     hideshow.endTime = {};
+    hideshow.normDate = {}
 
     var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
     ref.authWithOAuthPopup('google', function(error, authData) {
@@ -18,12 +19,13 @@
         //    return null
         //  } else {
             hideshow.endTime = response.data.opendate;
-          
+            hideshow.normDate = Date.prototype.toString(hideshow.endTime);
           //  console.log(hideshow.endTime);
         });
     });
     //    console.log(hideshow.endTime);
     hideshow.today = Date.now();
     console.log(hideshow.today);
+
   });
 })();
