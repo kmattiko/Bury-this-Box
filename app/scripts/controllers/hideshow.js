@@ -4,6 +4,7 @@
   angular.module('burybox').controller('HideShowController', function($firebase, $http) {
 
     var hideshow = this;
+    hideshow.today = {};
     hideshow.endTime = {};
 
     var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
@@ -14,11 +15,11 @@
       $http.get('https://sweltering-inferno-1762.firebaseio.com/user/' + authData.uid + '/timer' + '.json')
        .then(function(response) {
         hideshow.endTime = response.data.opendate;
-        console.log(hideshow.endTime);
+      //  console.log(hideshow.endTime);
       });
     });
 //    console.log(hideshow.endTime);
-    var today = Date.now();
-    console.log(today);
+    hideshow.today = Date.now();
+    console.log(hideshow.today);
   });
 })();
