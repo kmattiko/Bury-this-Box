@@ -4,13 +4,13 @@
     <h1>Bury this Box</h1>
   </header><!--end of jumbotron-->
 
-<section class="maincontent" id="existingbox" ng-if="hideshow.endTime < today">
+<section class="maincontent" id="existingbox" ng-if="hideshow.endTime > 1220129600000">
 <!--  <h4>Signed In As:{{authData.google.displayName}}</h4> -->
   <h2>View Your Open Box</h2>
   <a href="#/addtobox" class="btn btn-warning">Open Box</a>
 </section>
 
-<section class="maincontent" id="existingbox" ng-if="hideshow.endTime > today">
+<section class="maincontent" id="existingbox" ng-if="hideshow.endTime < 1220129600000">
   <h2>Your Box is Closed</h2>
   <h4>Please return on {{global.timeToOpen}}</h4>
   <a href="#/landing" id="logoutbtn" ng-click="logout.logout()">Sign Out</a>
