@@ -1,6 +1,22 @@
 #homepage {
   background-color: lightgrey;
 }
+#existingbox {
+  text-align: center;
+  margin-bottom: 4em;
+  border: .5em solid #6DC6B6;
+  width: 50%;
+  border-radius: 30px;
+  margin-left: 25%;
+}
+#existingbox h2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#existingbox img {
+  height: 17em;
+  width: 17em;
+}
 #closedbox {
   padding-top: 5%;
   text-align: center;

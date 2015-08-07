@@ -6,8 +6,9 @@
 
 <section class="maincontent" id="existingbox" ng-if="hideshow.endTime < hideshow.today || null">
 <!--  <h4>Signed In As:{{authData.google.displayName}}</h4> -->
-  <h2>View Your Open Box</h2>
-  <a href="#/addtobox" class="btn btn-warning">Open Box</a>
+  <h2>Your Box is Currently Open</h2>
+  <a href="#/addtobox" class="btn btn-warning">See Your Box</a><br>
+  <img src="http://freeiconbox.com/icon/256/15223.png"></img>
 </section>
 
 <section class="maincontent" id="closedbox" ng-if="hideshow.endTime > hideshow.today">
