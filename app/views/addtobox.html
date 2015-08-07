@@ -1,10 +1,10 @@
-<div class="container-fluid addto" ng-controller="PhotoController as photo">
+<div id="addtobox" class="container-fluid" ng-controller="PhotoController as photo">
 
   <header id="myspecialheader" class="jumbotron">
     <h1>Bury this Box</h1>
   </header><!--end of jumbotron-->
 
-  <form class="form-group" id="submission" ng-submit="photo.submit()">
+  <form id="submission" class="form-group" ng-submit="photo.submit()">
     <a href="#/addtobox" class="btn btn-warning" ng-model="photo.folder.picture" class="form-control" id="upload_widget_opener">Click Here to Upload</a>
     <p>Add a Photo Title</p>
     <input type="text" id="phototitle" class="form-control" ng-model="photo.folder.title" name="text" placeholder="Our First..."/><br>
@@ -15,13 +15,13 @@
     <button type="done" class="btn btn-warning" id="done" value="Submit">Submit Info</button>
   </form>
 
-  <div class="display" class="col-lg-12" ng-repeat="photo in photo.data">
+  <div id="photoshow" class="col-lg-12" ng-repeat="photo in photo.data">
     <img src="https://placeimg.com/150/150/any/grayscale" id="showtheimage" ng-src={{photo.picture}}>
     <h4 class="col-lg-9">{{photo.title}}</h4>
     <p class="col-lg-9">{{photo.description}}</p>
   </div>
 
-  <div class="complete" class="col-lg-12">
+  <div id="gototimer" class="complete" class="col-lg-12">
     <h4>Are you finished with your box?</h4>
     <a href='#/completebox' class="btn btn-warning">Click to Close</a>
   </div>
