@@ -1,28 +1,23 @@
-<div id="closedbox" class="container-fluid">
+<div id="closedbox" class="container-fluid" class="col-lg-12">
 
-<header class="jumbotron col-lg-12">
-    <h1>Closed Box</h1>
-    <p>Your box can be closed on a timer, select the amount of time</p>
-    <img src="http://st.houzz.com/simgs/2261063904b93e2e_4-9745/asian-jewelry-boxes-and-organizers.jpg">
-</header>
-<!--end of jumbotron-->
+<header class="jumbotron" id="myspecialheader">
+    <h1>Bury this Box</h1>
+</header><!--end of jumbotron-->
 
-<form class="form-control" class="col-lg-12" ng-controller="TimeController as time" ng-submit="time.submit()">
+
+<div id="timeform" class="col-lg-12">
+  <h3> Close Your Box </h3>
+  <p>Your box can be closed on a timer, select the amount of time</p>
+
+<form class="form-control" id="calendarform" ng-controller="TimeController as time" ng-submit="time.submit()">
   Close this box until...
   <input type="date" id="opendate" class="form-group" ng-model="time.open.opendate">
-  <button type="submit" value="Submit" class="btn btn-warning">Submit</button>
-  <a href="#" class="btn btn-warning">Done</a>
-<!--<timer interval="1000" countdown="10" ng-click="dangerzone = !dangerzone">{{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
-<button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button>
-<button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button>
-  <p ng-hide="dangerzone"></p>
-  <a href='#/home' class="btn btn-warning">Sign Out</a>
-  <a href='#/addtobox' ng-model="time.dangerzone" ng-show="dangerzone"class="dangerzone">danger zone</a> -->
+  <p>Please Note- By clicking submit you agree to your photos and photo data to be inaccessable until the date chosen. Once a selection is made and submitted it cannot be changed.</p>
+  <button value="Submit" id="closebutton" class="btn btn-warning">Submit</button>
 </form>
+</div>
 
-<div>
-
-<footer class="atbottom" class="col-lg-12">
+<footer id="atbottom" class="col-lg-12">
 <h3>SkimMatt 2015</h3>
 </footer>
 
