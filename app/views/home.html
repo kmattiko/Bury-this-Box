@@ -10,12 +10,13 @@
   <a href="#/addtobox" class="btn btn-warning">Open Box</a>
 </section>
 
-<section class="maincontent" id="existingbox" ng-if="hideshow.endTime > hideshow.today">
+<section class="maincontent" id="closedbox" ng-if="hideshow.endTime > hideshow.today">
   <h2>Your Box is Closed</h2>
   <h4>Please return on {{hideshow.normDate}}</h4>
+  <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/box.png"></img>
 </section>
 
-<div class ="col-lg-2 offset-lg-5">
+<div class ="col-lg-12">
     <a href="#/landing" id="logoutbtn" class="btn btn-warning" ng-click="logout.logout()">Sign Out</a>
 </div>
 

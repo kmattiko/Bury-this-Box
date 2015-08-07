@@ -1,23 +1,17 @@
 #homepage {
   background-color: lightgrey;
 }
-.maincontent {
+#closedbox {
   padding-top: 5%;
   text-align: center;
-  padding-bottom: 20%;
+  padding-bottom: 5em;;
 }
-.display {
-  width: 100%;
-}
-.atbottom {
-  text-align: center;
-  background-color: lightyellow;
-  padding-bottom: 6em;
-  padding-top: 2em;
-  padding-left: 90em;
-  margin-top: 10%;
-  color: teal;
+#closedbox img {
+  margin-top: 4em;
+  height: 14em;
+  width: 14em;
 }
 #logoutbtn {
-  margin-bottom: 2em;
+  margin-bottom: 5em;
+  margin-left: 48%;
 }
