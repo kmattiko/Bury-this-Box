@@ -1,12 +1,13 @@
 /* global angular Firebase */
 (function() {
+'use strict';
 
   angular.module('burybox').controller('HideShowController', function($firebase, $http) {
 
     var hideshow = this;
     hideshow.today = {};
     hideshow.endTime = {};
-    hideshow.normDate = {}
+    hideshow.normDate = {};
 
     var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
     ref.authWithOAuthPopup('google', function(error, authData) {

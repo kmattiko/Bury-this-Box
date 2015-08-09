@@ -1,10 +1,8 @@
-/* global Firebase angular */
+/* global angular Firebase*/
   (function() {
     'use strict';
 
-  angular.module('burybox').controller('LoginController', function($location, $firebase) {
-
-  var login = this;
+  angular.module('burybox').controller('LoginController', function() {
 
   var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
   ref.authWithOAuthPopup('google', function(error, authData){
