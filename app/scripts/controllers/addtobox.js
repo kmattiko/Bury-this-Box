@@ -1,30 +1,39 @@
-/* global angular Firebase*/
+/* global angular Firebase cloudinary*/
 (function() {
   'use strict';
+
   angular.module('burybox').controller('PhotoController', function($firebaseArray) {
 
       var photo = this;
 
-      var firebase = new Firebase('https://sweltering-inferno-1762.firebaseio.com/');
+      document.getElementById('upload_widget_opener').addEventListener('click', function(){
 
-      photo.data = $firebaseArray(firebase);
-      console.log(photo.data);
+        cloudinary.openUploadWidget({
+          cloud_name: 'kmattiko', upload_preset: 'q5mpk6sc'
+        },
 
-    /*  self.submit = function() {
-        self.data.$add({
-        photo: self.photoLoad */
+      function(error, result) {
+        console.log(result[0].url);
+        photo.folder.picture = result[0].url;
+      });
+    }, false);
 
-      photo.submit = function() {
-        photo.data.$add({
-          photo: photo.url,
-          title: photo.title,
-          description: photo.description
-        });
-        photo.url = '';
-        photo.title = '';
-        photo.description = '';
+      var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/user');
+      var authData = ref.getAuth();
+      var photosRef = ref.child(authData.uid + '/photos');
+      photo.folder = {
+        picture: '',
+        title: '',
+        description: ''
       };
 
+      photo.data = $firebaseArray(photosRef);
+
+      photo.submit = function() {
+        photo.data.$add(photo.folder).then(function(response){
+          console.log(response);
+        });
+      };
 
     });
 

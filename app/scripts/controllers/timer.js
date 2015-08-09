@@ -1,37 +1,32 @@
-/* global angular */
+/* global angular Firebase*/
 (function(){
   'use strict';
 
-  angular.module('burybox')
+angular.module('burybox').controller('TimeController', function($firebaseArray, $location){
 
-.controller('TimeController', function($scope){
-$scope.timerRunning = true;
+var time = this;
+var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com/user');
+var authData = ref.getAuth();
+var timestampRef = ref.child(authData.uid + '/timer');
 
-/*$scope.startTimer = function() {
-  $scope.$broadcast('timer-start');
-  $scope.timerRunning = true;
+time.open = {opendate: null};
+
+//time.toFirebase = {endDate: ' '}
+
+time.data = $firebaseArray(timestampRef);
+
+time.submit = function(){
+  var timestamp = time.open.opendate.getTime();
+  ref.child(authData.uid).child('timer').update({
+    opendate: timestamp
+  });
+  console.log(timestamp);
 };
 
-$scope.stopTimer = function() {
-  $scope.$broadcast('timer-stop');
-  $scope.timerRunning = false;
-};
-$scope.goTo = function(route) {
-  if (timer.countdown == 0) {
-    ''
-  }
-}*/
 
-$scope.$on('timer-stopped', function() {
-  /*  if (time.countdown === 0) {
-    $scope.click = (dangerzone);
-    }
-    else {
-      return !dangerzone;
-    };
-//remember: session;*/
+document.getElementById('closebutton').addEventListener('click', function(){
+  $location.path('/home');
 });
 
-})
-
+});
 })();

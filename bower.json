@@ -8,13 +8,14 @@
     "angular-route": "~1.4.2",
     "firebase": "~2.2.7",
     "angularfire": "~1.1.2",
-    "angular-timer": "~1.3.3"
+    "angular-timer": "~1.3.3",
+    "cloudinary": "~1.0.24"
   },
   "devDependencies": {
     "chai": "~3.0.0",
     "mocha": "~2.2.5"
   },
-  "version": "0.3.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/kmattiko/Bury-this-Box",
   "authors": [
     "Kim Mattiko <amberlie@rocketmail.com>"

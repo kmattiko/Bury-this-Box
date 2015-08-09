@@ -1,16 +1,11 @@
+
 <div id="homepage" class="container-fluid" class="col-lg-12" ng-controller="HideShowController as hideshow">
 
   <header class="jumbotron" id="myspecialheader">
     <h1>Bury this Box</h1>
   </header><!--end of jumbotron-->
 
-  <section class="maincontent" id="closedbox" ng-if="hideshow.endTime > hideshow.today">
-    <h2>Your Box is Closed</h2>
-    <h4>Please return on {{hideshow.normDate}}</h4>
-    <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/box.png"></img>
-  </section>
-
-<section class="maincontent" id="existingbox" ng-if="hideshow.endTime < hideshow.today">
+<section class="maincontent" id="existingbox">
 <!--  <h4>Signed In As:{{authData.google.displayName}}</h4> -->
   <h2>Your Box is Currently Open</h2>
   <a href="#/addtobox" class="btn btn-warning">See Your Box</a><br>

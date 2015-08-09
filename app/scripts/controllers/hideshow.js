@@ -1,37 +1,33 @@
-/* global angular */
-(function(){
+/* global angular Firebase */
+(function() {
 'use strict';
 
-var app = angular.module('burybox');
+  angular.module('burybox').controller('HideShowController', function($firebase, $http) {
 
-app.controller('ShowHideController', function(){
+    var hideshow = this;
+    hideshow.today = {};
+    hideshow.endTime = {};
+    hideshow.normDate = {};
 
-  this.click = false;
-});
+    var ref = new Firebase('https://sweltering-inferno-1762.firebaseio.com');
+    ref.authWithOAuthPopup('google', function(error, authData) {
+      //var userUid = authData.uid;
+      //console.log(userUid);
 
-/* TODO
-  When a timeframe is selected, enter button must be cliked
-  If/Else statement and Alert (Are you sure you want to hide this?)
-  On confirmation, NG Hide for images
-  also...NG Show for message "your images are hidden, come back later"
-  Timeframe starts counting
-  NG Hide/Show switches when timeframe ends
-*/
-/*var app = angular.module('burybox');
-app.controller('HideShowController', function(){
-  var hideshow = this;
+      $http.get('https://sweltering-inferno-1762.firebaseio.com/user/' + authData.uid + '/timer' + '.json')
+        .then(function(response) {
+        //  if (response.data.opendate === null) {
+        //    return null
+        //  } else {
+            hideshow.endTime = response.data.opendate;
+            hideshow.normDate = hideshow.endTime;
+          //console.log(hideshow.normDate);
+          //  console.log(hideshow.endTime);
+        });
+    });
+    //    console.log(hideshow.endTime);
+    hideshow.today = Date.now();
+    console.log(hideshow.today);
 
-//_forEach src add ng-src? (how will img src have ng-src added to each?)
-
-
-  hideshow.submit(function(){
-    if( sumbit == true ) {
-      ng-hide (something) for (timeframe) && ng-show (something) for (timeframe)
-      .when (timeframe end) switch
-    }
-    else {
-      return false;
-    }
-  });*/
-
+  });
 })();

@@ -1,20 +1,48 @@
 #landingpage {
   background-color: lightgray;
-}
-.jumbotron {
-  padding-bottom: 20%;
-  background-color: darkgrey;
-  color: lightyellow;
-}
-.content {
-  padding-bottom: 5%;
   text-align: center;
 }
-h3 {
-  font-size: 2em;
+#myspecialheader {
+  background-image: url("http://res.cloudinary.com/kmattiko/image/upload/c_scale,h_400,w_1900/v1438218281/reusage-blog-fabulous-burnt-burned-wood-close-up_bubcl0.png");
+  font-family: cursive;
+  font-weight: bold;
+  padding-top: 5em;
+  color: white;
+  height: 18em;
+}
+#about {
+  border-radius: 30px;
+  background-color: #6DC6B6;
+  margin-top: 5em;
+  width: 70%;
+  margin-left: 15%;
+  padding: 1em 1em 2em 1em;
+}
+#signin {
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 4em;
+}
+#signin img {
+  width: 4em;
+  height: 4em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
-.atbottom {
+#atbottom {
   text-align: center;
-  background-color: lightyellow;
+  background-color: #3E3D39;
+  font-family: cursive;
+  height: 8em;
+  padding-bottom: 5em;
+  padding-left: 90em;
+  color: teal;
+}
+#atbottom a {
+  color: lightgrey;
+  font-family: sans-serif;
+  display: inline-block;
+  padding-top: 1em;
+  width: 35%;
 }

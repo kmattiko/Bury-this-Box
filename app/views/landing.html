@@ -1,36 +1,33 @@
-<div id="landingpage container-fluid">
+<div id="landingpage" class= "container-fluid col-lg-12">
 
-<header class="jumbotron">
-  <div class="col-lg-12">
-    <img src="http://clarkstonareafarmersmarket.weebly.com/uploads/3/0/2/1/30214255/1919248.jpg">
+  <header class="jumbotron" id="myspecialheader">
     <h1>Bury this Box</h1>
-    <p>A place for unpleasent items to live</p>
-  </div>
-</header>
-<!--end of jumbotron-->
-<section id="about" class="col-lg-12">
-  <h2>A little bit about this service...</h2>
+  </header><!--end of jumbotron-->
+
+<div id="heading" class="col-lg-12">
+  <h2>A place for hidden items to live</h2>
+  <img src="http://clarkstonareafarmersmarket.weebly.com/uploads/3/0/2/1/30214255/1919248.jpg">
+</div>
+
+<section id="about" class="col-lg-12" >
+  <h3>A little bit about this service...</h3>
   <p>We provide a place for you to store images that you may not want to look at right now. You might want to look at them later but not today. We are here to help. You can store those photos with us, even give yourself a set amount of time away, and come back to them when you are ready.
     Welcome to Bury this Box. </p>
-</section>
-<!--end of about -->
-<div class="content">
-<!--<div id="signin" class="col-lg-6">
-  <h3>Return to your box <br> or <br> Start a new box</h3>
-  <a href="#/googlelogin" id="googlelogin" ng-click="login.login()">Log-in with Google</a>
-</div> -->
+</section><!--end of about -->
 
 
-<!--end of signin -->
 <div id="signin" class="col-lg-12" ng-controller="LoginController as login">
-  <h3>Authenticte with Google to Sign-In</h3>
-  <img src="http://icons.iconarchive.com/icons/position-relative/social-1/128/google-icon.png"><br>
-  <a href="#/home" ng-click="login.login()" class="btn btn-warning">Authenticate</a>
+  <h3>Sign-In with Google</h3>
+  <a href="#/home2" ng-click="login.login()" id="loginrouting" class="btn btn-warning">Authenticate</a><br>
+  <img src="http://icons.iconarchive.com/icons/position-relative/social-1/128/google-icon.png">
 </div><!--end of signup -->
-</div>
-</div>
 
-<footer class="atbottom" class="col-lg-12">
-<h3>Footer</h3>
-<p>A footer of some kind will live here one day</p>
+
+<footer id="atbottom" class="col-lg-12">
+<h3>SkimMatt 2015</h3>
+<a href="#/specialthanks">Special Thanks</a>
+<a href="https://github.com/kmattiko/Bury-this-Box">See the Code on Github</a>
 </footer>
+
+
+</div><!--end of landingpage -->
