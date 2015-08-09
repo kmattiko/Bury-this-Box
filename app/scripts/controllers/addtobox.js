@@ -1,8 +1,8 @@
-/* global angular Firebase */
+/* global angular Firebase cloudinary*/
 (function() {
   'use strict';
 
-  angular.module('burybox').controller('PhotoController', function($firebaseArray, $location) {
+  angular.module('burybox').controller('PhotoController', function($firebaseArray) {
 
       var photo = this;
 
@@ -14,7 +14,7 @@
 
       function(error, result) {
         console.log(result[0].url);
-        photo.folder.picture = result[0].url
+        photo.folder.picture = result[0].url;
       });
     }, false);
 
