@@ -1,4 +1,4 @@
-#closedbox {
+#completebox {
   text-align: center;
 }
 
@@ -7,9 +7,25 @@
   background-color: lightgrey;
 }
 
+
+#timeform p {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
 #calendarform {
+  border-radius: 30px;
   height: 6em;
+  font-size: 1.2em;
   background-color: #6DC6B6;
+  width: 50%;
+  margin-left: 25%;
   padding-top: 2em;
-  margin-bottom: 3em;
+}
+#calendarform p {
+  margin-top: 3em;
+  font-size: 1.2em;
+}
+#closebutton {
+  margin-bottom: 2em;
 }

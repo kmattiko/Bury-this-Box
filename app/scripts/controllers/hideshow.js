@@ -19,7 +19,8 @@
         //    return null
         //  } else {
             hideshow.endTime = response.data.opendate;
-            hideshow.normDate = Date.prototype.toString(hideshow.endTime);
+            hideshow.normDate = hideshow.endTime;
+          //console.log(hideshow.normDate);
           //  console.log(hideshow.endTime);
         });
     });

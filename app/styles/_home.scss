@@ -1,23 +1,38 @@
 #homepage {
   background-color: lightgrey;
 }
-.maincontent {
-  padding-top: 5%;
+#existingbox {
   text-align: center;
-  padding-bottom: 20%;
+  margin-bottom: 4em;
+  border: .5em solid #6DC6B6;
+  width: 50%;
+  border-radius: 30px;
+  margin-left: 25%;
 }
-.display {
-  width: 100%;
+#existingbox h2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-.atbottom {
+#existingbox img {
+  height: 17em;
+  width: 17em;
+}
+#closedbox {
+  padding-top: 3%;
   text-align: center;
-  background-color: lightyellow;
-  padding-bottom: 6em;
-  padding-top: 2em;
-  padding-left: 90em;
-  margin-top: 10%;
-  color: teal;
+  padding-bottom: 7em;;
+  border: .5em solid #6DC6B6;
+  width: 50%;
+  border-radius: 30px;
+  margin-left: 25%;
+}
+#closedbox img {
+  margin-top: 4em;
+  height: 14em;
+  width: 14em;
 }
 #logoutbtn {
-  margin-bottom: 2em;
+  margin-top: 3em;
+  margin-bottom: 5em;
+  margin-left: 48%;
 }

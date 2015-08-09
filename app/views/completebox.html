@@ -1,24 +1,27 @@
-<div id="closedbox" class="container-fluid" class="col-lg-12">
+<div id="completebox" class="container-fluid" class="col-lg-12">
 
 <header class="jumbotron" id="myspecialheader">
     <h1>Bury this Box</h1>
 </header><!--end of jumbotron-->
 
-
 <div id="timeform" class="col-lg-12">
-  <h3> Close Your Box </h3>
+  <h2> Close Your Box </h2>
   <p>Your box can be closed on a timer, select the amount of time</p>
 
-<form class="form-control" id="calendarform" ng-controller="TimeController as time" ng-submit="time.submit()">
+
+<form class="form-control" class="col-lg-12" id="calendarform" ng-controller="TimeController as time" ng-submit="time.submit()">
   Close this box until...
   <input type="date" id="opendate" class="form-group" ng-model="time.open.opendate">
   <p>Please Note- By clicking submit you agree to your photos and photo data to be inaccessable until the date chosen. Once a selection is made and submitted it cannot be changed.</p>
-  <button value="Submit" id="closebutton" class="btn btn-warning">Submit</button>
+  <button value="Submit" id="closebutton" class="btn btn-warning">Submit</button></br>
+  <a href="#/addtobox" class="btn btn-warning">Go Back to Photos</a>
 </form>
 </div>
 
 <footer id="atbottom" class="col-lg-12">
 <h3>SkimMatt 2015</h3>
+<a href="#/specialthanks">Special Thanks</a>
+<a href="https://github.com/kmattiko/Bury-this-Box">See the Code on Github</a>
 </footer>
 
 </div>
