@@ -44,6 +44,10 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase', 'timer'])
       templateUrl: 'views/home2.html'
     });
 
+    $routeProvider.when('/thanks', {
+      templateUrl: 'views/thanks.html'
+    });
+
     $routeProvider.when('/404', {
       templateUrl: 'views/404.html'
     });
