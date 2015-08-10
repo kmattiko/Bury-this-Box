@@ -15,7 +15,7 @@
     "chai": "~3.0.0",
     "mocha": "~2.2.5"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/kmattiko/Bury-this-Box",
   "authors": [
     "Kim Mattiko <amberlie@rocketmail.com>"
