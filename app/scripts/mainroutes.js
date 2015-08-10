@@ -2,7 +2,7 @@
 (function() {
   'use strict';
 
-angular.module('burybox', ['ngRoute', 'restangular', 'firebase', 'timer'])
+angular.module('burybox', ['ngRoute', 'restangular', 'firebase'])
 
   .config(function($routeProvider) {
 
@@ -15,20 +15,10 @@ angular.module('burybox', ['ngRoute', 'restangular', 'firebase', 'timer'])
       //where login/authentication happens
     });
 
-    $routeProvider.when('/makebox', {
-      templateUrl: 'views/makebox.html'
-      //where user goes to start a box
-    });
-
     $routeProvider.when('/addtobox', {
       url: 'addtobox',
       templateUrl: 'views/addtobox.html'
       //where boxes are added to
-    });
-
-    $routeProvider.when('/hideshow', {
-      templateUrl: 'views/hideshow.html'
-      //where completed boxes are viewed and saved
     });
 
     $routeProvider.when('/completebox', {
