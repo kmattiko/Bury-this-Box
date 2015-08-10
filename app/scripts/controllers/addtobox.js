@@ -1,4 +1,4 @@
-/* global angular Firebase cloudinary*/
+/* global angular Firebase*/
 (function() {
   'use strict';
 
@@ -13,8 +13,8 @@
         },
 
       function(error, result) {
-        console.log(result[0].url);
-        photo.folder.picture = result[0].url;
+        console.log(result[0].url)
+        photo.folder.picture = result[0].url
       });
     }, false);
 

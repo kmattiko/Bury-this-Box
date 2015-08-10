@@ -40,7 +40,7 @@
     }
   },
   "dependencies": {
-    "cloudinary": "^1.2.2"
+    "cloudinary": "^1.2.4"
   },
   "name": "bury-this-box",
   "description": "",
