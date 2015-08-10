@@ -40,11 +40,11 @@
     }
   },
   "dependencies": {
-    "cloudinary": "^1.2.2"
+    "cloudinary": "^1.2.4"
   },
   "name": "bury-this-box",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "gulpfile.babel.js",
   "directories": {
     "test": "test"
