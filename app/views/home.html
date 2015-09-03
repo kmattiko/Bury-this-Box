@@ -7,7 +7,7 @@
   <section class="maincontent" id="closedbox" ng-if="hideshow.endTime > hideshow.today">
     <h2>Your Box is Closed</h2>
     <h4>Until</h4><br>
-    <h3>{{hideshow.normDate}}</h3>
+    <h3>{{hideshow.normDate | date:'medium'}}</h3>
     <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/box.png"></img>
   </section>
 
